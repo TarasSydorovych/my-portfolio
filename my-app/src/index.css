@@ -278,6 +278,168 @@ color: black;
   display: flex;
   justify-content: center;
   margin-top: 30px;
-  font-size: 40px;
+  font-size: 60px;
 color: white;
 }
+#about .about {
+  display: flex;
+  justify-content: center;
+}
+#about .about h1{
+  width: 60%;
+  font-size: 25px;
+  font-family: 'Jost', sans-serif;
+  color: white;
+}
+.technologies {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.technologies h3{
+  
+  font-size: 60px;
+  font-family: 'Jost', sans-serif;
+  color: white;
+}
+.techIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.techIcon .icon {
+  display: flex;
+ font-size: 80px;
+ margin-right: 20px;
+ margin-bottom: 30px;
+  
+}
+/*sddddddddddddddddddddddddddddd*/
+#mailSend{
+  width: 100% ;
+  height: 100vh;
+}
+.containerInfo{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+ .columInfo {
+   display: flex;
+   width: 40%;
+   height: 500px;
+   margin-bottom: 100px;
+   justify-content: space-around;
+ }
+ .columInfoTe h2 {
+   font-size: 30px;
+   margin-top: 150px;
+   color: white;
+   font-weight: bold;
+   font-family: 'Jost', sans-serif;
+ 
+ }
+ .columInfoTe strong{
+  color: white;
+  font-family: 'Jost', sans-serif;
+  font-size: 25px;
+ }
+ .columInfoTe p{
+  color: white;
+  font-family: 'Jost', sans-serif;
+  
+ }
+ .columInfoTe a{
+  font-family: 'Jost', sans-serif;
+   text-decoration: none;
+   font-size: 20px;
+   color: white;
+ }
+ .columInfoTe h1{
+   margin-top: 20px;
+ }
+ .wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  
+ }
+ .contact-form{
+   margin: 0 auto;
+   display: flex;
+    width: 100%;
+ }
+ .input-fields{
+   display: flex;
+   flex-direction: column;
+   margin-right: 4%;
+  
+ }
+ .input-fields,
+ .msg {
+   width: 46%;
+ }
+ .input-fields .input,
+ .msg textarea {
+   margin: 10px 0;
+   background: transparent;
+   border: 0;
+   border-bottom: 2px solid white;
+   padding: 10px;
+   color: white;
+   width: 100%;
+ }
+ .msg textarea{
+   height: 83%;
+ }
+ ::-webkit-input-placeholder{
+   color: white;
+   font-weight: bolder;
+ }
+ ::-moz-input-placeholder{
+   color: white;
+   font-weight: bolder;
+ }
+ ::-ms-input-placeholder{
+   color: white;
+   font-weight: bolder;
+ }
+ .btn{
+  position: relative;
+   background: none;
+   text-align: center;
+   padding: 15px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   width: 100%;
+   font-size: 20px;
+   cursor: pointer;
+   text-transform: uppercase;
+   height: 40px;
+   font-family: 'Jost', sans-serif;
+   
+ }
+ .btn::before{
+  content: '';
+  width:40%;
+  z-index: -1;
+  height: 100%; 
+  background: #0DEEBA;
+  top:0;
+  left: 0;
+  position: absolute;
+ }
+ .btn:hover::before{
+  
+  width: 100%;
+  color:black;
+  transition: all .5s ease-in-out;
+  background: #0DEEBA;
+  
+ }
