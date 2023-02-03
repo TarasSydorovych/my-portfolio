@@ -12,6 +12,8 @@ import { height } from '@mui/system'
 import { Link } from "react-router-dom";
 import sendEmail from '../../function/sendMessage'
 import HeaderEng from "../header/headerEng";
+import ContaktUs from "./contaktUs";
+import Form from "./form";
 
 export default function FirstBlock() {
   const form = useRef();
@@ -21,7 +23,8 @@ export default function FirstBlock() {
     return(
 
        <div className='headerStyle'>
-        <Partisipals/>
+        <ContaktUs/>
+        
        
            <div className='containerHeader'>
            <a name='#/'></a>
@@ -157,18 +160,7 @@ export default function FirstBlock() {
     </div>
 </div>
 <div className='wrapper'>
-  <form className='contact-form' type='submit' ref={form} onSubmit={(e) => sendEmail(form, e)}>
-    <div className='input-fields'>
-      <input type="text" name="user_name" className='input' placeholder='Name'/>
-      <input type="text" className='input' name="user_email" placeholder='Email Adress'/>
-      <input type="text" className='input' name="Phone" placeholder='Phone'/>
-      <input type="text" className='input' name="Subject" placeholder='Subject'/>
-    </div>
-    <div className='msg'>
-      <textarea placeholder='Message' name="message"></textarea>
-      <button className='btn' type='submit'>Send message</button>
-    </div>
-  </form>
+  <Form/>
 </div>
 </div>
        </section>

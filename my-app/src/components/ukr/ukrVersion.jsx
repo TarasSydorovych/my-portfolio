@@ -12,6 +12,8 @@ import { height } from '@mui/system'
 import { Link } from "react-router-dom";
 import HeaderUkr from "../header/headerUkr";
 import sendEmail from '../../function/sendMessage'
+import ContaktUs from './contaktUs';
+import Form from './form';
 export default function UkrVersion() {
   const form = useRef();
 
@@ -20,6 +22,7 @@ export default function UkrVersion() {
     return(
 
        <div className='headerStyle'>
+        <ContaktUs/>
         <Partisipals/>
            <div className='containerHeader'>
           <HeaderUkr/>
@@ -154,18 +157,7 @@ export default function UkrVersion() {
     </div>
 </div>
 <div className='wrapper'>
-  <form className='contact-form' type='submit' ref={form} onSubmit={(e) => sendEmail(form, e)}>
-    <div className='input-fields'>
-      <input type="text" name="user_name" className='input' placeholder="Ім'я"/>
-      <input type="text" className='input' name="user_email" placeholder='Email адрес'/>
-      <input type="text" className='input' name="Phone" placeholder='Телефон'/>
-      <input type="text" className='input' name="Subject" placeholder='Тема'/>
-    </div>
-    <div className='msg'>
-      <textarea placeholder='Повідомлення' name="message"></textarea>
-      <button className='btn' type='submit'>Відправити повідомлення</button>
-    </div>
-  </form>
+ <Form/>
 </div>
 </div>
        </section>
