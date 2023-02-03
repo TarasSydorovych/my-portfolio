@@ -1,6 +1,6 @@
 
 
-import { useRef } from 'react';
+import { useRef, useState, useEffect} from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import { SiReact, SiRedux, SiJavascript,SiHtml5,SiCsswizardry,SiNodemon,SiMongodb,SiMaterialui,SiGithub } from 'react-icons/si';
@@ -14,15 +14,34 @@ import HeaderUkr from "../header/headerUkr";
 import sendEmail from '../../function/sendMessage'
 import ContaktUs from './contaktUs';
 import Form from './form';
+import Up from '../up';
 export default function UkrVersion() {
   const form = useRef();
 
+  const [show, setShow] = useState(false);
+  useEffect(()=>{
 
+    const handlscroll = () => {
+      if(window.scrollY > 640){
+        setShow(true)
+      }else{
+        setShow(false)
+      }
+    }
+    document.addEventListener('scroll', handlscroll)
+    return () => {
+      document.removeEventListener('scroll', handlscroll)
+    }
+    },[])
    
     return(
 
        <div className='headerStyle'>
         <ContaktUs/>
+        {show &&
+        <Up/>
+       
+        }
         <Partisipals/>
            <div className='containerHeader'>
           <HeaderUkr/>

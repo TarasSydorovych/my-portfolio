@@ -1,6 +1,6 @@
 
 import { BsSun } from "react-icons/bs";
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import { SiReact, SiRedux, SiJavascript,SiHtml5,SiCsswizardry,SiNodemon,SiMongodb,SiMaterialui,SiGithub } from 'react-icons/si';
@@ -14,18 +14,36 @@ import sendEmail from '../../function/sendMessage'
 import HeaderEng from "../header/headerEng";
 import ContaktUs from "./contaktUs";
 import Form from "./form";
+import Up from "../up";
+import { useState } from "react";
 
 export default function FirstBlock() {
   const form = useRef();
-  
+  const [show, setShow] = useState(false);
+  useEffect(()=>{
+
+    const handlscroll = () => {
+      if(window.scrollY > 640){
+        setShow(true)
+      }else{
+        setShow(false)
+      }
+    }
+    document.addEventListener('scroll', handlscroll)
+    return () => {
+      document.removeEventListener('scroll', handlscroll)
+    }
+    },[])
 
    
     return(
 
        <div className='headerStyle'>
         <ContaktUs/>
-        
+        {show &&
+        <Up />
        
+        }
            <div className='containerHeader'>
            <a name='#/'></a>
            <HeaderEng/>

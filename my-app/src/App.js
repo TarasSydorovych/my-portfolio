@@ -8,6 +8,7 @@ import Ukr from "./components/ukr/ukr";
 import ServiseUkr from "./components/ukr/servise";
 import AboutEng from "./components/eng/about";
 import AboutUkr from "./components/ukr/about";
+import Up from "./components/up";
 
 
 
@@ -29,7 +30,8 @@ function App() {
       <Route path='/eng/about' element={<AboutEng/>}/>
       <Route path='/ukr/about' element={<AboutUkr/>}/>
       <Route path='/ukr' element={<Ukr/>}/>
- </Routes>
+     </Routes>
+    
 </div>
   );
 }

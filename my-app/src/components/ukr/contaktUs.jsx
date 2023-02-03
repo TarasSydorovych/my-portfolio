@@ -12,6 +12,9 @@ export default function ContaktUs() {
         <div className="wraperFixed">
            <button className="fixedButton" onClick={() => setCall(true)}>
           Напишіть нам
+          <span class="pulse-button__rings"></span>
+    <span className="pulse-button__rings"></span>
+    <span className="pulse-button__rings"></span>
            </button>
            </div>
 {call &&

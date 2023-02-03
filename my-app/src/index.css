@@ -549,6 +549,7 @@ flex-direction: column;
   position: fixed;
   color:white;
   top:50vh;
+  
   transform: rotate(-90deg);
   z-index: 2;
   background: none;
@@ -585,4 +586,75 @@ flex-direction: column;
 .bodyContact{
   padding-top: 10%;
   width: 70%;
+}
+.up{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 90%;
+  top: 85vh;
+  cursor: pointer;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  background: white;
+}
+.pulse-button__rings {
+  border: 2px solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+ 
+  animation-duration: 2.0s;
+  animation-name: pulse_1;
+  animation-iteration-count: infinite;
+  z-index: -1;
+}
+ 
+.pulse-button__rings:nth-child(2) {
+  animation-name: pulse_2;
+}
+ 
+.pulse-button__rings:nth-child(3) {
+  animation-name: pulse_3;
+}
+@keyframes pulse_1 {
+  from {
+    opacity: 1;
+    transform: scale(0.9, 0.9);
+  }
+ 
+  to {
+    opacity: 0;
+    transform: scale(1.3, 1.3);
+  }
+}
+ 
+@keyframes pulse_2 {
+  from {
+    opacity: 1;
+    transform: scale(0.8, 0.8);
+  }
+ 
+  to {
+    opacity: 0;
+    transform: scale(1.5, 1.5);
+  }
+}
+ 
+@keyframes pulse_3 {
+  from {
+    opacity: 1;
+    transform: scale(0.8, 0.8);
+  }
+ 
+  to {
+    opacity: 0;
+    transform: scale(1.7, 1.7);
+  }
 }
