@@ -25,7 +25,9 @@ useEffect(() => {
         <header>
         <nav>
         {windowDimensions === false &&
-  <AiOutlineMenu style={{color: 'white',cursor: 'pointer',}} onClick={() => setMenu(true)}/>
+        <div className="outLineMenu">
+  <AiOutlineMenu  onClick={() => setMenu(true)}/>
+  </div>
  
 }
 {menu &&

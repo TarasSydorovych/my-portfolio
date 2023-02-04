@@ -365,6 +365,19 @@ font-size: 40px;
   font-size: 100px;
   transition: all .3s ease-in-out;
 }
+
+nav .outLineMenu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  margin-left: 10px;
+   border: 1px solid white;
+   border-radius: 3px;
+   background: white;
+
+}
 /*sddddddddddddddddddddddddddddd*/
 #mailSend{
   width: 100% ;
@@ -683,7 +696,7 @@ flex-direction: column;
 @media only screen and (max-width: 479px) and (min-width: 300px) { 
   #mailSend{
     width: 100% ;
-    height: 131vh;
+   margin-bottom: 60px;
   }
   .titleFirst {
     width: 75%;
@@ -772,7 +785,7 @@ flex-direction: column;
  @media only screen and (max-width: 700px) and (min-width: 479px) { 
   #mailSend{
     width: 100% ;
-    height: 140vh;
+    margin-bottom: 60px;
   }
   .titleFirst {
     width: 75%;
@@ -864,7 +877,7 @@ left: 420px;
  @media only screen and (max-width: 960px) and (min-width: 700px) { 
   #mailSend{
     width: 100% ;
-    height: 140vh;
+    margin-bottom: 60px;
   }
   .titleFirst {
     width: 75%;

@@ -26,8 +26,9 @@ export default function HeaderUkr() {
         <header>
         <nav>
         {windowDimensions === false &&
+         <div className="outLineMenu">
   <AiOutlineMenu style={{color: 'white',cursor: 'pointer',}} onClick={() => setMenu(true)}/>
- 
+  </div>
 }
 {menu &&
 <div className="menu">
