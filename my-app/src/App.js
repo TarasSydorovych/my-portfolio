@@ -9,6 +9,7 @@ import ServiseUkr from "./components/ukr/servise";
 import AboutEng from "./components/eng/about";
 import AboutUkr from "./components/ukr/about";
 import Up from "./components/up";
+import { useEffect } from "react";
 
 
 

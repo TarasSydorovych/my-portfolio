@@ -19,6 +19,10 @@ code {
         width: 100%;
         height: 100vh;
 }
+body{
+  display: flex;
+  flex-direction: column;
+}
 .containerHeader{
     
   position: absolute;
@@ -42,8 +46,8 @@ nav ul{
 }
 nav ul li a{
   position: relative;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 1.8vw;
+  padding-left: 1.8vw;
   border-right: 2px solid ;
   font-family: 'Jost', sans-serif;
   font-size: 1rem;
@@ -79,7 +83,7 @@ a{
 }
 nav h1{
   display: flex;
-      padding-left: 60px;
+      padding-left: 3.125vw;
       font-family: 'Jost', sans-serif;
       color: white;
 }
@@ -89,7 +93,7 @@ nav .iconWrap{
   align-items: center;
   width: 36px;
   height: 36px;
-   margin-right: 60px;
+   margin-right: 3.125vw;
    border: 1px solid white;
    border-radius: 3px;
    background: white;
@@ -103,7 +107,7 @@ cursor: pointer;
 nav .iconWrap:hover{
   width: 40px;
   height: 40px;
-  margin-right: 56px;
+  margin-right: 2.917vw;
   transition: all .2s ease-in-out;
   cursor: pointer;
   box-shadow: 1px 5px 10px #0DEEBA;
@@ -125,14 +129,14 @@ nav .lang h4 a{
  flex-direction: column;
  justify-content: center;
  align-items: center;
- height: 500px;
- padding-bottom: 174px;
+ height: 66.3129973474801vh;
+ padding-bottom: 23.076923076923077vh;
  width: 100%;
 
  
 }
 #titleFirst .titleFirst{
-margin-top: 190px;
+margin-top: 25.19893899204244vh;
   display: flex;
  justify-self: end;
  height: 50%;
@@ -179,7 +183,7 @@ margin-top: 190px;
 #productList{
   
  padding: 0;
-
+ height: 100%;
 height: 100vh;
 width: 100%;
 }
@@ -217,21 +221,14 @@ color: white;
 }
 #productList .productList div h1 {
   position: absolute;
-  top: 230px;
-  left: 30px;
+  top: 30.50397877984085vh;
+  left: 1.563vw;
   color: white;
   font-size: 25px;
   font-family: 'Jost', sans-serif;
   transition: all 300ms ease-in-out;
 }
-#productList .productList div h1 {
-  position: absolute;
-  top: 230px;
-  left: 30px;
-  color: white;
-  font-size: 25px;
-  font-family: 'Jost', sans-serif;
-}
+
 #productList .productList div:hover h1 {
   top: 260px;
   color: black;
@@ -293,7 +290,7 @@ color: white;
   flex-direction: column;
   justify-content: start;
   width: 25%;
-  height: 400px;
+  
   margin-left: 30px;
     
 }
@@ -345,7 +342,7 @@ font-size: 40px;
   flex-direction: column;
   align-items: center;
 }
-.technologies h3{
+.technologies h4{
   
   font-size: 60px;
   font-family: 'Jost', sans-serif;
@@ -371,7 +368,7 @@ font-size: 40px;
 /*sddddddddddddddddddddddddddddd*/
 #mailSend{
   width: 100% ;
-  height: 80vh;
+  
 }
 .containerInfo{
   width: 100%;
@@ -418,7 +415,6 @@ font-size: 40px;
   justify-content: center;
   align-items: center;
   width: 60%;
-  
  }
  .contact-form{
    margin: 0 auto;
@@ -509,7 +505,7 @@ font-size: 40px;
  
  footer h6{ 
   font-family: 'Jost', sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   color:white;
 }
 
@@ -658,3 +654,300 @@ flex-direction: column;
     transform: scale(1.7, 1.7);
   }
 }
+.menu{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top:0;
+  left: 0;
+  width: 40%;
+  height: 100vh;
+  background: white;
+  opacity: 0.8;
+  z-index: 3;
+}
+.menu .ulMobile{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.liMobile a{
+  border: none;
+  
+  font-family: 'Jost', sans-serif;
+  font-size: 2em;
+  color: black;
+}
+@media only screen and (max-width: 479px) and (min-width: 300px) { 
+  #mailSend{
+    width: 100% ;
+    height: 131vh;
+  }
+  .titleFirst {
+    width: 75%;
+  }
+  .titleFirst h1{
+    color: white;
+    font-size: 20px;
+  }
+  .fixedButton{
+      font-size: 1em;
+    left: -5%;
+    border: none;
+  }
+  #productList{
+  
+    padding: 0;
+   height: 280vh;
+   width: 100%;
+   }
+  #productList .productList div{
+    display: 'flex';
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    height: 40vh;
+    border: 2px solid white;
+    margin-right: 2%;
+    margin-top: 2%;
+    transition: all 300ms ease-in-out;
+  }
+  #productList .productList div h1 {
+    top: 26.52519893899204vh;
+    left: 1.563vw;
+  }
+  #productList .productList div:hover h1 {
+    top: 34.48275862068966vh;
+  }
+  #productList .productList div p {
+    top: 39.787798408488065vh;
+    left: 1.563vw;
+  }
+  .about .block{
+    width: 80%;
+  }
+  #about .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .technologies h4{
+    font-size: 50px;
+  }
+  .techIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.techIcon .icon {
+  display: flex;
+ font-size: 130px;
+ margin-right: 20px;
+ margin-bottom: 30px;
+  
+}
+.techIcon .icon:hover {
+  font-size: 150px;
+  transition: all .3s ease-in-out;
+}
+.containerInfo{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .columInfo {
+  display: flex;
+  width: 80%;
+ }
+ .wrapper{
+  width: 80%;
+ }
+ .up{
+  left: 80%;
+ }
+ }
+ @media only screen and (max-width: 700px) and (min-width: 479px) { 
+  #mailSend{
+    width: 100% ;
+    height: 140vh;
+  }
+  .titleFirst {
+    width: 75%;
+  }
+  .titleFirst h1{
+    color: white;
+    font-size: 20px;
+  }
+  .fixedButton{
+      font-size: 1em;
+    left: -4%;
+    border: none;
+  }
+  #productList{
+  
+    padding: 0;
+   height: 280vh;
+   width: 100%;
+   }
+  #productList .productList div{
+    display: 'flex';
+    overflow: hidden;
+    position: relative;
+    width: 60%;
+    height: 40vh;
+    border: 2px solid white;
+    margin-right: 2%;
+    margin-top: 2%;
+    transition: all 300ms ease-in-out;
+  }
+  #productList .productList div h1 {
+    top: 26.52519893899204vh;
+    left: 1.563vw;
+  }
+  #productList .productList div:hover h1 {
+    top: 34.48275862068966vh;
+  }
+  #productList .productList div p {
+    top: 39.787798408488065vh;
+    left: 1.563vw;
+  }
+  #productList .productList div h3 {
+left: 420px;
+  }
+  .about .block{
+    width: 80%;
+  }
+  #about .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .technologies h4{
+    font-size: 50px;
+  }
+  .techIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.techIcon .icon {
+  display: flex;
+ font-size: 130px;
+ margin-right: 20px;
+ margin-bottom: 30px;
+  
+}
+.techIcon .icon:hover {
+  font-size: 150px;
+  transition: all .3s ease-in-out;
+}
+.containerInfo{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .columInfo {
+  display: flex;
+  width: 80%;
+ }
+ .wrapper{
+  width: 80%;
+ }
+ .up{
+  left: 80%;
+ }
+}
+ @media only screen and (max-width: 960px) and (min-width: 700px) { 
+  #mailSend{
+    width: 100% ;
+    height: 140vh;
+  }
+  .titleFirst {
+    width: 75%;
+  }
+  .titleFirst h1{
+    color: white;
+    font-size: 30px;
+  }
+  .fixedButton{
+      font-size: 1em;
+    left: -2%;
+    border: none;
+  }
+  #productList{
+  
+    padding: 0;
+   height: 160vh;
+   width: 100%;
+   }
+  #productList .productList div{
+    display: 'flex';
+    overflow: hidden;
+    position: relative;
+    width: 40%;
+    height: 40vh;
+    border: 2px solid white;
+    margin-right: 2%;
+    margin-top: 2%;
+    transition: all 300ms ease-in-out;
+  }
+  #productList .productList div h1 {
+    top: 26.52519893899204vh;
+    left: 1.563vw;
+  }
+  #productList .productList div:hover h1 {
+    top: 34.48275862068966vh;
+  }
+  #productList .productList div p {
+    top: 39.787798408488065vh;
+    left: 1.563vw;
+  }
+  .about .block{
+    width: 80%;
+  }
+  #about .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .technologies h4{
+    font-size: 50px;
+  }
+  .techIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.techIcon .icon {
+  display: flex;
+ font-size: 130px;
+ margin-right: 20px;
+ margin-bottom: 30px;
+  
+}
+.techIcon .icon:hover {
+  font-size: 150px;
+  transition: all .3s ease-in-out;
+}
+.containerInfo{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .columInfo {
+  display: flex;
+  width: 80%;
+ }
+ .wrapper{
+  width: 80%;
+ }
+ .up{
+  left: 90%;
+ }
+ }
+ 

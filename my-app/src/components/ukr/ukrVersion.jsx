@@ -15,12 +15,13 @@ import sendEmail from '../../function/sendMessage'
 import ContaktUs from './contaktUs';
 import Form from './form';
 import Up from '../up';
+import Footer from '../footer/footer';
 export default function UkrVersion() {
   const form = useRef();
 
   const [show, setShow] = useState(false);
   useEffect(()=>{
-
+    
     const handlscroll = () => {
       if(window.scrollY > 640){
         setShow(true)
@@ -149,7 +150,7 @@ export default function UkrVersion() {
       <h2>Зверніться до нас</h2>
       <address>
         <p>
-          <strong>ST-Studio</strong>
+          <strong>WebUi-Studio</strong>
           <br/>
          вулиця Львівська
           <br/>
@@ -180,13 +181,7 @@ export default function UkrVersion() {
 </div>
 </div>
        </section>
-       <footer>
-     
-            <h6>
-            © Copyright 2022 St-Studio. All rights reserved.
-            </h6>
-      
-       </footer>
+       <Footer/>
       </div>
       
       

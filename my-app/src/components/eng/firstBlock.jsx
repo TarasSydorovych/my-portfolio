@@ -16,6 +16,7 @@ import ContaktUs from "./contaktUs";
 import Form from "./form";
 import Up from "../up";
 import { useState } from "react";
+import Footer from "../footer/footer";
 
 export default function FirstBlock() {
   const form = useRef();
@@ -54,6 +55,7 @@ export default function FirstBlock() {
         <a href='#prodList'><button>Start</button></a>  
        </section>
        <a name='prodList'></a>
+       <body>
        <section id='productList' >
         <h2>Our services</h2>
         <div className='productList'>
@@ -128,7 +130,7 @@ export default function FirstBlock() {
        
         </div>
         <div className='technologies'>
-        <h3>Technologies</h3>
+        <h4 className="h3Technologies">Technologies</h4>
         <a name='about'></a>
         <div className='techIcon'>
 <SiHtml5 style={{color:'#dd4b25'}} className='icon'/>
@@ -151,7 +153,7 @@ export default function FirstBlock() {
       <h2>Get it touch whis us</h2>
       <address>
         <p>
-          <strong>ST-Studio</strong>
+          <strong>WebUi-Studio</strong>
           <br/>
           Lvivska  street
           <br/>
@@ -182,13 +184,8 @@ export default function FirstBlock() {
 </div>
 </div>
        </section>
-       <footer>
-     
-            <h6>
-            © Copyright 2022 St-Studio. All rights reserved.
-            </h6>
-      
-       </footer>
+       </body>
+     <Footer/>
       </div>
       
       

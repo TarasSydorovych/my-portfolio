@@ -11,7 +11,7 @@ export default function Footer() {
          <footer>
      
      <h6>
-     © Copyright 2022 St-Studio. All rights reserved.
+     © Copyright 2022 WebUi-Studio. All rights reserved.
      </h6>
 
 </footer>
