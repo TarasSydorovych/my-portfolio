@@ -8,7 +8,7 @@ const [windowDimensions, setWindowDimensions] = useState(true)
 const [menu, setMenu] = useState(false)
 useEffect(() => {
   function handleResize() {
-    console.log(window.innerWidth);
+   
     if(window.innerWidth < 874){
 
     setWindowDimensions(false);

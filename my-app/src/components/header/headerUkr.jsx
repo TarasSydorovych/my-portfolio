@@ -9,7 +9,7 @@ export default function HeaderUkr() {
   const [menu, setMenu] = useState(false)
   useEffect(() => {
     function handleResize() {
-      console.log(window.innerWidth);
+     
       if(window.innerWidth < 874){
   
       setWindowDimensions(false);
