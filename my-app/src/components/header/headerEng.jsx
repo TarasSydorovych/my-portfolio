@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import { BsSun } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
-import { Link } from "react-router-dom";
-import ReactGA from 'react-ga';
+import { Link} from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
-export default function HeaderEng() {
+
+export default  function HeaderEng() {
 const [windowDimensions, setWindowDimensions] = useState(true)
 const [menu, setMenu] = useState(false)
 useEffect(() => {
-  ReactGA.pageview(window.location.pathname);
+ 
   function handleResize() {
    
     if(window.innerWidth < 874){

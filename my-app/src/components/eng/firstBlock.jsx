@@ -6,19 +6,16 @@ import Swal from 'sweetalert2';
 import { SiReact, SiRedux, SiJavascript,SiHtml5,SiCsswizardry,SiNodemon,SiMongodb,SiMaterialui,SiGithub } from 'react-icons/si';
 import "@fontsource/quicksand";
 import "@fontsource/itim"
-import { CardMedia, Card, Typography, Box} from '@mui/material';
-import Partisipals from '../partisipals'
-import { height } from '@mui/system'
-import { Link } from "react-router-dom";
-import sendEmail from '../../function/sendMessage'
 import HeaderEng from "../header/headerEng";
 import ContaktUs from "./contaktUs";
 import Form from "./form";
 import Up from "../up";
+
 import { useState } from "react";
 import Footer from "../footer/footer";
 
 export default function FirstBlock() {
+
   const form = useRef();
   const [show, setShow] = useState(false);
   useEffect(()=>{
@@ -150,12 +147,12 @@ export default function FirstBlock() {
 
 <div className='columInfo'>
     <div className='columInfoTe'>
-      <h2>Get it touch whis us</h2>
+      <h2>Get in touch whis us</h2>
       <address>
         <p>
           <strong>WebUi-Studio</strong>
           <br/>
-          Lvivska  street
+          Lvivska  Street
           <br/>
           78560 Lviv
           <br/>

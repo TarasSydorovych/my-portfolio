@@ -8,18 +8,19 @@ import Ukr from "./components/ukr/ukr";
 import ServiseUkr from "./components/ukr/servise";
 import AboutEng from "./components/eng/about";
 import AboutUkr from "./components/ukr/about";
-import ReactGA from 'react-ga';
-import Up from "./components/up";
+import ReactGA from "react-ga4";
 import { useEffect } from "react";
 
 
-
 const TRACKING_ID = "G-YKDFRTP1T8";
-ReactGA.initialize(TRACKING_ID);
-
 
 
 function App() {
+
+useEffect(() => {
+  ReactGA.initialize(TRACKING_ID);
+  ReactGA.send({ hitType: "pageview", page: `${window.location.pathname + window.location.search}` });
+})
 
   return (
     <div >
@@ -34,8 +35,9 @@ function App() {
       <Route path='/eng/about' element={<AboutEng/>}/>
       <Route path='/ukr/about' element={<AboutUkr/>}/>
       <Route path='/ukr' element={<Ukr/>}/>
+     
      </Routes>
-    
+
 </div>
   );
 }

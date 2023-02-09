@@ -184,7 +184,7 @@ margin-top: 25.19893899204244vh;
   
  padding: 0;
  height: 100%;
-height: 100vh;
+height: 110vh;
 width: 100%;
 }
 #productList h2{
@@ -208,14 +208,14 @@ color: white;
   overflow: hidden;
   position: relative;
   width: 25%;
-  height: 40vh;
+  height: 300px;
   border: 2px solid white;
   margin-right: 2%;
   margin-top: 2%;
   transition: all 300ms ease-in-out;
 }
 #productList .productList div:hover {
-  height: 55vh;
+  height: 410px;
   background: white;
   
 }
