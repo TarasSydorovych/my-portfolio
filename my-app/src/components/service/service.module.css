@@ -1,0 +1,411 @@
+:root {
+  --standart-color: #00aef7;
+  --clr-dark-blue-rgb: 6, 9, 34;
+  --secondary-color: #09aff4;
+  --custom-font: "Jost", sans-serif;
+  --customtwo-font: "Work Sans", Arial, Tahoma;
+}
+.sectionTitle {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.serviceTitleH1 {
+  color: white;
+  font-family: var(--custom-font);
+  font-size: 40px;
+}
+.serviceListWrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.serviceListWrapSmall {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.whotOfferWrap {
+  color: white;
+  font-family: var(--custom-font);
+  font-size: 50px;
+  align-self: flex-start;
+}
+.listServicesWrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.serviceBlockWrap {
+  position: relative;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  border: 1px solid var(--standart-color);
+  box-shadow: 0px 0px 10px 0px rgba(var(--clr-dark-blue-rgb), 0.1);
+  width: 356px;
+  height: 309px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 30px;
+}
+/* Визначаємо ключові кадри для анімації при наведенні */
+/* Визначаємо ключові кадри для анімації при наведенні */
+@keyframes hover-animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Визначаємо ключові кадри для анімації при відведенні */
+@keyframes leave-animation {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+.serviceBlockWrap::before {
+  border-radius: 0.5rem;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--standart-color);
+  z-index: 1;
+  color: white;
+}
+
+/* Додаємо анімацію при наведенні */
+.serviceBlockWrap:hover::before {
+  border: 1px solid var(--standart-color);
+  box-shadow: 0px 0px 10px 0px rgba(var(--clr-dark-blue-rgb), 0.1);
+  animation: hover-animation 0.5s ease-in-out forwards;
+}
+
+/* Додаємо анімацію при відведенні */
+.serviceBlockWrap::before {
+  transition: none; /* Вимикаємо перехід для плавного відведення */
+}
+
+.serviceBlockWrap:not(:hover)::before {
+  animation: leave-animation 0.5s ease-in-out forwards;
+}
+
+/* Додаємо анімацію при відведенні */
+.serviceBlockWrap.leave::before {
+  animation: leave-animation 0.5s ease-in-out forwards;
+}
+
+.serviceBlockWrap:hover .aiFillTablet {
+  color: white;
+}
+.serviceBlockWrap:hover .readMore {
+  color: white;
+  z-index: 2;
+}
+.serviceBlockWrap:hover .link {
+  color: white;
+  z-index: 2;
+}
+.aiFillTablet {
+  color: var(--secondary-color);
+  font-size: 70px;
+  z-index: 2;
+}
+.titleOfServBlock {
+  font-family: var(--custom-font);
+  color: white;
+  font-size: 30px;
+  margin-bottom: 0;
+  z-index: 2;
+}
+.serviceBlockWrap:hover .titleOfServBlock {
+  z-index: 2;
+  color: white;
+}
+.descOfServBlock {
+  font-family: var(--custom-font);
+  color: white;
+  font-size: 20px;
+  z-index: 2;
+}
+.readMore {
+  color: var(--standart-color);
+  cursor: pointer;
+  font-family: var(--custom-font);
+  font-size: 20px;
+  width: auto;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aiOutlineArrowRight {
+  font-size: 30px;
+  margin-left: 10px;
+  transition: margin-left 0.3s ease;
+}
+.readMore:hover .aiOutlineArrowRight {
+  margin-left: 20px;
+}
+.desWrap {
+  z-index: 4;
+}
+.questionWrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.questionWrapSmall {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.questionTitleH4 {
+  color: white;
+  font-family: var(--custom-font);
+  font-size: 40px;
+  margin-top: 80px;
+}
+.questionListWrap {
+  width: 80%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.oneQuestionWrapSmall {
+  width: calc(48% - 2px);
+  height: auto;
+  border: 1px solid var(--standart-color);
+  border-radius: 5px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.questionTitle {
+  width: calc(100% - 20px);
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.queTitle {
+  color: white;
+  font-family: var(--custom-font);
+  font-size: 25px;
+}
+.aiOutlineDown {
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+}
+.questionAnswer {
+  font-family: var(--custom-font);
+  font-weight: bolder;
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+}
+.getWrap {
+  width: calc(100% - 80px);
+  height: auto;
+  background: #060822;
+  padding: 40px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.h5 {
+  font-family: var(--custom-font);
+  font-size: 40px;
+  color: white;
+  margin-bottom: 0;
+}
+.paragraf {
+  color: white;
+  font-family: var(--custom-font);
+  width: 500px;
+  text-align: center;
+}
+.buttonContact {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 0.75rem 2.25rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0px 3px 10px -5px rgba(6, 9, 34, 0.15);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  z-index: 0;
+  color: white;
+  background-color: none;
+  border-color: var(--standart-color);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 479px) and (min-width: 300px) {
+  .sectionTitle {
+    height: 300px;
+  }
+  .whotOfferWrap {
+    font-size: 30px;
+    text-align: center;
+  }
+  .serviceListWrapSmall {
+    width: 99%;
+  }
+  .serviceBlockWrap {
+    width: 280px;
+    height: auto;
+
+    margin: 0;
+    margin-top: 10px;
+  }
+  .questionWrapSmall {
+    width: 99%;
+  }
+  .questionTitleH4 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .questionListWrap {
+    width: 99%;
+  }
+  .oneQuestionWrapSmall {
+    width: calc(99% - 2px);
+    height: auto;
+    border: 1px solid var(--standart-color);
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .aiOutlineDown {
+    flex-shrink: 0;
+  }
+  .queTitle {
+    font-size: 20px;
+  }
+  .getWrap {
+    width: calc(100% - 10px);
+    padding: 5px;
+  }
+  .h5 {
+    font-size: 30px;
+  }
+  .paragraf {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 700px) and (min-width: 479px) {
+  .paragraf {
+    width: auto;
+  }
+  .whotOfferWrap {
+    font-size: 35px;
+    text-align: center;
+  }
+  .questionTitleH4 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .questionListWrap {
+    width: 99%;
+  }
+  .oneQuestionWrapSmall {
+    width: calc(99% - 2px);
+    height: auto;
+    border: 1px solid var(--standart-color);
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .aiOutlineDown {
+    flex-shrink: 0;
+  }
+  .queTitle {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 960px) and (min-width: 700px) {
+  .questionListWrap {
+    width: 99%;
+  }
+  .oneQuestionWrapSmall {
+    width: calc(99% - 2px);
+    height: auto;
+    border: 1px solid var(--standart-color);
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .aiOutlineDown {
+    flex-shrink: 0;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 960px) {
+  .questionListWrap {
+    width: 99%;
+  }
+  .oneQuestionWrapSmall {
+    width: calc(99% - 2px);
+    height: auto;
+    border: 1px solid var(--standart-color);
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .aiOutlineDown {
+    flex-shrink: 0;
+  }
+}

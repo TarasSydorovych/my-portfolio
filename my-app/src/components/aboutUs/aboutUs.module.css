@@ -1,0 +1,229 @@
+:root {
+  --standart-color: #00aef7;
+  --clr-dark-blue-rgb: 6, 9, 34;
+  --secondary-color: #09aff4;
+  --secondText-color: #c8c9cd;
+
+  --backcol-color: #060822;
+  --custom-font: "Jost", sans-serif;
+  --customtwo-font: "Work Sans", Arial, Tahoma;
+}
+.containerHeader {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+.sectionTitle {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.serviceTitleH1 {
+  color: white;
+  font-family: var(--custom-font);
+  font-size: 40px;
+}
+.firstBlockWrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.imgAboutFirst {
+  width: 700px;
+  height: auto;
+  border-radius: 10px;
+}
+.firstTextWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30%;
+  height: auto;
+  margin-left: 50px;
+  align-self: flex-start;
+}
+.firstWrapText {
+  font-family: var(--custom-font);
+  font-size: 40px;
+  color: var(--standart-color);
+}
+.firstWrP {
+  font-family: var(--custom-font);
+  font-size: 20px;
+  color: white;
+}
+.goalWrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.goalH3 {
+  font-family: var(--custom-font);
+  font-size: 40px;
+  color: var(--standart-color);
+}
+.goalP {
+  font-family: var(--custom-font);
+  font-size: 20px;
+  color: white;
+  width: 900px;
+  text-align: center;
+}
+.misionWrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.smallMisionWrap {
+  width: 80%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.earth {
+  width: 800px;
+  height: auto;
+}
+.misionDesctWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.masionH3 {
+  font-family: var(--custom-font);
+  font-size: 40px;
+  color: var(--standart-color);
+}
+.misionP {
+  font-family: var(--custom-font);
+  font-size: 20px;
+  color: white;
+  width: 90%;
+  text-align: center;
+}
+@media only screen and (max-width: 479px) and (min-width: 300px) {
+  .sectionTitle {
+    height: 300px;
+  }
+  .firstBlockWrap {
+    flex-direction: column;
+  }
+  .imgAboutFirst {
+    width: 300px;
+  }
+  .firstTextWrap {
+    width: calc(100% - 20px);
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+  .misionWrap {
+    margin-top: 50px;
+  }
+  .smallMisionWrap {
+    width: 98%;
+    flex-direction: column;
+  }
+  .misionDesctWrap {
+    width: 100%;
+  }
+  .earth {
+    width: 300px;
+    margin-top: 20px;
+  }
+  .goalP {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 700px) and (min-width: 479px) {
+  .sectionTitle {
+    height: 300px;
+  }
+  .firstBlockWrap {
+    flex-direction: column;
+  }
+  .imgAboutFirst {
+    width: 470px;
+  }
+  .firstTextWrap {
+    width: calc(100% - 20px);
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+  .misionWrap {
+    margin-top: 50px;
+  }
+  .smallMisionWrap {
+    width: 98%;
+    flex-direction: column;
+  }
+  .misionDesctWrap {
+    width: 100%;
+  }
+  .earth {
+    width: 470px;
+    margin-top: 20px;
+  }
+  .goalP {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 960px) and (min-width: 700px) {
+  .sectionTitle {
+    height: 300px;
+  }
+  .firstBlockWrap {
+    flex-direction: column;
+  }
+  .imgAboutFirst {
+    width: 470px;
+  }
+  .firstTextWrap {
+    align-items: center;
+    width: calc(100% - 20px);
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+  .misionWrap {
+    margin-top: 50px;
+  }
+  .smallMisionWrap {
+    width: 98%;
+    flex-direction: column;
+  }
+  .misionDesctWrap {
+    width: 100%;
+  }
+  .earth {
+    width: 470px;
+    margin-top: 20px;
+  }
+  .goalP {
+    width: 95%;
+  }
+  .firstWrP {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 960px) {
+  .imgAboutFirst {
+    width: 470px;
+  }
+  .earth {
+    width: 470px;
+  }
+}

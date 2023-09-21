@@ -1,193 +1,184 @@
-
-
-import { useRef, useState, useEffect} from 'react';
-import emailjs from '@emailjs/browser';
-import Swal from 'sweetalert2';
-import { SiReact, SiRedux, SiJavascript,SiHtml5,SiCsswizardry,SiNodemon,SiMongodb,SiMaterialui,SiGithub } from 'react-icons/si';
+import { useRef, useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
+import {
+  SiReact,
+  SiRedux,
+  SiJavascript,
+  SiHtml5,
+  SiCsswizardry,
+  SiNodemon,
+  SiMongodb,
+  SiGithub,
+} from "react-icons/si";
 import "@fontsource/quicksand";
-import "@fontsource/itim"
-import { CardMedia, Card, Typography, Box} from '@mui/material';
-import Partisipals from '../partisipals'
-import { height } from '@mui/system'
+import "@fontsource/itim";
+import { CardMedia, Card, Typography, Box } from "@mui/material";
+import Partisipals from "../partisipals";
+import { height } from "@mui/system";
 import { Link } from "react-router-dom";
 import HeaderUkr from "../header/headerUkr";
-import sendEmail from '../../function/sendMessage'
-import ContaktUs from './contaktUs';
-import Form from './form';
-import Up from '../up';
-import Footer from '../footer/footer';
-export default function UkrVersion() {
+import sendEmail from "../../function/sendMessage";
+import ContaktUs from "./contaktUs";
+import Form from "./form";
+import Up from "../up";
+import Footer from "../footer/footer";
+export default function UkrVersion({ t }) {
   const form = useRef();
 
   const [show, setShow] = useState(false);
-  useEffect(()=>{
-    
+  useEffect(() => {
     const handlscroll = () => {
-      if(window.scrollY > 640){
-        setShow(true)
-      }else{
-        setShow(false)
+      if (window.scrollY > 640) {
+        setShow(true);
+      } else {
+        setShow(false);
       }
-    }
-    document.addEventListener('scroll', handlscroll)
+    };
+    document.addEventListener("scroll", handlscroll);
     return () => {
-      document.removeEventListener('scroll', handlscroll)
-    }
-    },[])
-   
-    return(
+      document.removeEventListener("scroll", handlscroll);
+    };
+  }, []);
 
-       <div className='headerStyle'>
-        <ContaktUs/>
-        {show &&
-        <Up/>
-       
-        }
-        <Partisipals/>
-           <div className='containerHeader'>
-          <HeaderUkr/>
-<section id='titleFirst'>
-        <div className='titleFirst'>
-        <h1>Ми створюємо ефективні сайти для вашого бізнесу</h1>
-        </div>
-        <a href='#prodList'><button>Почати</button></a>  
-       </section>
-       <a name='prodList'></a>
-       <section id='productList' >
-        <h2>Наші Послуги</h2>
-        <div className='productList'>
-        <div>
-          <h1>Landing page</h1>
-          <h2>01</h2>
-          <h3>Landing</h3>
-          <p>Landing page з прогресивним дизайном і хорошою функціональністю.</p>
-        </div>
-        <div>
-        <h1>Бізнес-сайт</h1>
-          <h2>02</h2>
-          <h3>Business</h3>
-          <p>Сайт для вашого бізнесу з максимальною реалізацією ваших потреб.</p>
-        </div>
-        <div>
-        <h1>Інтернет-магазин</h1>
-          <h2>03</h2>
-          <h3>Online</h3>
-          <p>Ми створимо ідеальну платформу для ваших онлайн-продажів.</p>
-        </div>
-        <div>
-        <h1>Блог</h1>
-          <h2>04</h2>
-          <h3>Blog</h3>
-          <p>Хочете поділитися своїми думками? Не біда, ми створимо блог!</p>
-        </div>
-        <div>
-          <h1>Прогресивний дизайн</h1>
-          <h2>05</h2>
-          <h3>Design</h3>
-          <p>Наша команда дизайнерів розробить унікальний дизайн для вашого бренду.</p>
+  return (
+    <div className="headerStyle">
+      <ContaktUs t={t} />
+      {show && <Up />}
+      <Partisipals />
+      <div className="containerHeader">
+        <HeaderUkr t={t} />
+        <section id="titleFirst">
+          <div className="titleFirst">
+            <h1> {t("description.part1.mainPage.mainTitle")}</h1>
           </div>
-        <div>
-        <h1>Пошукова оптимізація</h1>
-          <h2>06</h2>
-          <h3>Optimization</h3>
-          <p>Ваш сайт буде максимально оптимізований для пошукових систем.</p>
-        </div>
-        </div>
-      
-       </section>
-      
-       <section id="about">
-       <h3>Про нас</h3>
-        <div className='about'>
-        <div className='block'>
-          <div className='minblock'>
-          <h2>01</h2>
+          <a href="#prodList">
+            <button>{t("description.part1.mainPage.mainButStart")}</button>
+          </a>
+        </section>
+        <a name="prodList"></a>
+        <section id="productList">
+          <h2>{t("description.part1.mainPage.mainOurServ")}</h2>
+          <div className="productList">
+            <div>
+              <h1>{t("description.part1.mainPage.landTitle")}</h1>
+              <h2>01</h2>
+              <h3>Landing</h3>
+              <p>{t("description.part1.mainPage.lendDesc")}</p>
+            </div>
+            <div>
+              <h1>{t("description.part1.mainPage.businesTitile")}</h1>
+              <h2>02</h2>
+              <h3>Business</h3>
+              <p>{t("description.part1.mainPage.businesDesc")}</p>
+            </div>
+            <div>
+              <h1>{t("description.part1.mainPage.onlineTitile")}</h1>
+              <h2>03</h2>
+              <h3>Online</h3>
+              <p>{t("description.part1.mainPage.onlineDesc")}</p>
+            </div>
+            <div>
+              <h1>{t("description.part1.mainPage.crmInterTitile")}</h1>
+              <h2>04</h2>
+              <h3>CRM</h3>
+              <p>{t("description.part1.mainPage.crmInterDesc")}</p>
+            </div>
+            <div>
+              <h1>{t("description.part1.mainPage.designTitile")}</h1>
+              <h2>05</h2>
+              <h3>Design</h3>
+              <p>{t("description.part1.mainPage.designDesc")}</p>
+            </div>
+            <div>
+              <h1>{t("description.part1.mainPage.optimizaTitile")}</h1>
+              <h2>06</h2>
+              <h3>Optimization</h3>
+              <p>{t("description.part1.mainPage.optimizaDesc")}</p>
+            </div>
           </div>
-          <h1>Досвід</h1>
-          <p> Ми команда професіоналів, націлена на максимальний результат для клієнта.
-         Ми прагнемо створювати не просто вражаючі, а максимально корисні та ефективні речі.
-         Ми працюємо на результат, адже успіх наших клієнтів – наш успіх! </p>
-        </div>
-        <div className='block'>
-        <div className='minblock'>
-          <h2>02</h2>
-          </div>
-          <h1>Технології</h1>
-          <p> Ми використовуємо передові технології в розробці. Завдяки цьому ваш веб-додаток буде максимально швидким і візуально привабливим для користувача.
-           Ви можете переглянути список технологій нижче.
-          </p>
-        </div>
-        <div className='block'>
-        <div className='minblock'>
-          <h2>03</h2>
-          </div>
-          <h1>Комунікація</h1>
-          <p>Ми повністю відкриті до будь-яких потреб клієнта. Спілкування з клієнтом відбувається на всіх етапах розробки для досягнення максимального результату. Девіз нашої компанії - задоволений клієнт, задоволені ми.</p>
-        </div>
-       
-        </div>
-        <div className='technologies'>
-        <h3>Технології</h3>
-        <a name='about'></a>
-        <div className='techIcon'>
-<SiHtml5 style={{color:'#dd4b25'}} className='icon'/>
-<SiCsswizardry style={{color:'#254bdd'}} className='icon'/>
-<SiJavascript style={{color:'#efd81d'}} className='icon'/>
-<SiReact style={{color:'#5ed2f2'}} className='icon'/>
-<SiRedux style={{color: '#7248b6'}} className='icon'/>
-<SiNodemon style={{color: '#4e9543'}} className='icon'/>
-<SiMongodb style={{color: '#006548'}} className='icon'/>
-<SiMaterialui style={{color: '#0079f3'}} className='icon'/>
-<SiGithub style={{color: 'white'}} className='icon'/>
-        </div>
-        </div>
-       </section>
-       <section id='mailSend'>
-       <div className='containerInfo'>
+        </section>
 
-<div className='columInfo'>
-    <div className='columInfoTe'>
-      <h2>Зверніться до нас</h2>
-      <address>
-        <p>
-          <strong>WebUi-Studio</strong>
-          <br/>
-         вулиця Львівська
-          <br/>
-          78560 Львів
-          <br/>
-          Україна
-        </p>
-      </address>
-      <br/>
-      <br/>
-      <p>
-      <strong>Телефон:</strong>
-      &nbsp;
-      <a href='tel:+380937246193'>   +380937246193</a>
-          <br/>
-          <strong>Email:</strong>
-          &nbsp;
-          <a href='mailto:jakzadarom2@gmail.com'>   jakzadarom2@gmail.com</a>
-          <br/>
-       
-      </p>
-  
+        <section id="about">
+          <h3>{t("description.part1.mainPage.aboutUsTitle")}</h3>
+          <div className="about">
+            <div className="block">
+              <div className="minblock">
+                <h2>01</h2>
+              </div>
+              <h1>{t("description.part1.mainPage.aboutFirstTitle")}</h1>
+              <p>{t("description.part1.mainPage.aboutFirst")}</p>
+            </div>
+            <div className="block">
+              <div className="minblock">
+                <h2>02</h2>
+              </div>
+              <h1>{t("description.part1.mainPage.aboutSecondTitle")}</h1>
+              <p>{t("description.part1.mainPage.aboutSecond")}</p>
+            </div>
+            <div className="block">
+              <div className="minblock">
+                <h2>03</h2>
+              </div>
+              <h1>{t("description.part1.mainPage.aboutThreTitle")}</h1>
+              <p>{t("description.part1.mainPage.aboutThre")}</p>
+            </div>
+          </div>
+          <div className="technologies">
+            <h3>{t("description.part1.mainPage.tech")}</h3>
+            <a name="about"></a>
+            <div className="techIcon">
+              <SiHtml5 style={{ color: "#dd4b25" }} className="icon" />
+              <SiCsswizardry style={{ color: "#254bdd" }} className="icon" />
+              <SiJavascript style={{ color: "#efd81d" }} className="icon" />
+              <SiReact style={{ color: "#5ed2f2" }} className="icon" />
+              <SiRedux style={{ color: "#7248b6" }} className="icon" />
+              <SiNodemon style={{ color: "#4e9543" }} className="icon" />
+              <SiMongodb style={{ color: "#006548" }} className="icon" />
 
-    </div>
-</div>
-<div className='wrapper'>
- <Form/>
-</div>
-</div>
-       </section>
-       <Footer/>
+              <SiGithub style={{ color: "white" }} className="icon" />
+            </div>
+          </div>
+        </section>
+        <section id="mailSend">
+          <div className="containerInfo">
+            <div className="columInfo">
+              <div className="columInfoTe">
+                <h2>{t("description.part1.mainPage.write")}</h2>
+                <address>
+                  <p>
+                    <strong>WebUi-Studio</strong>
+                    <br />
+                    {t("description.part1.mainPage.vul")}
+                    <br />
+                    {t("description.part1.mainPage.ind")}
+                    <br />
+                    {t("description.part1.mainPage.count")}
+                  </p>
+                </address>
+                <br />
+                <br />
+                <p>
+                  <strong>{t("description.part1.mainPage.phone")}:</strong>
+                  &nbsp;
+                  <a href="tel:+380937246193"> +380937246193</a>
+                  <br />
+                  <strong>Email:</strong>
+                  &nbsp;
+                  <a href="mailto:jakzadarom2@gmail.com">
+                    webui.dev.studio@gmail.com
+                  </a>
+                  <br />
+                </p>
+              </div>
+            </div>
+            <div className="wrapper">
+              <Form t={t} />
+            </div>
+          </div>
+        </section>
+        <Footer />
       </div>
-      
-      
-   
-     
-       </div>
-
-    )
+    </div>
+  );
 }

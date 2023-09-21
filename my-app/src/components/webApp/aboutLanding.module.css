@@ -1,0 +1,351 @@
+:root {
+  --standart-color: #00aef7;
+  --clr-dark-blue-rgb: 6, 9, 34;
+  --secondary-color: #09aff4;
+  --secondText-color: #c8c9cd;
+
+  --backcol-color: #060822;
+  --custom-font: "Jost", sans-serif;
+  --customtwo-font: "Work Sans", Arial, Tahoma;
+}
+.containerHeader {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+.sectionTitle {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.serviceTitleH1 {
+  color: white;
+  font-family: var(--custom-font);
+  font-size: 40px;
+}
+.centralWrap {
+  width: calc(100% - 40px);
+  height: auto;
+  padding: 20px;
+  background: var(--backcol-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+.centralWrapSmall {
+  width: 80%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.descriptionWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  height: auto;
+}
+.imgLand {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.listOfServWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: calc(470px - 60px);
+  height: auto;
+  padding: 30px;
+  background: var(--secondary-color);
+  border-radius: 10px;
+}
+.servListH2 {
+  margin-top: 0;
+  font-family: var(--custom-font);
+  color: white;
+  font-size: 30px;
+}
+.servListH2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  justify-content: space-between;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  list-style-type: none;
+}
+.listLi {
+  width: 100%;
+  height: 70px;
+  border-radius: 5px;
+  background-color: var(--backcol-color);
+  margin-top: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.linkSerc {
+  text-decoration: none;
+  color: white;
+  font-family: var(--custom-font);
+  font-size: 25px;
+}
+.aiFillTablet {
+  color: white;
+  margin-right: 5px;
+  font-size: 40px;
+}
+.firstDescH {
+  color: white;
+  font-family: var(--custom-font);
+  font-size: 40px;
+  margin-bottom: 0;
+}
+.firstDescP {
+  color: var(--secondText-color);
+  font-family: var(--custom-font);
+  font-size: 20px;
+}
+.whatOfferWrap {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.whatOfferWrapWho {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.titleOffer {
+  font-family: var(--custom-font);
+  font-size: 40px;
+  color: white;
+  margin-bottom: 0;
+}
+.titleOfferRes {
+  font-family: var(--custom-font);
+  font-size: 40px;
+  color: white;
+}
+.titleOfferP {
+  font-family: var(--custom-font);
+  font-size: 20px;
+  color: white;
+  width: 50%;
+  text-align: center;
+}
+.offerWrS {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.offerSmallWr {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 300px;
+  height: auto;
+}
+.bigLabel {
+  color: var(--standart-color);
+  font-family: var(--custom-font);
+  font-size: 50px;
+
+  margin: 0;
+  margin-right: 5px;
+}
+.bigLabelText {
+  color: white;
+  font-family: var(--custom-font);
+  font-size: 20px;
+}
+@media only screen and (max-width: 479px) and (min-width: 300px) {
+  .sectionTitle {
+    height: 200px;
+  }
+  .serviceTitleH1 {
+    font-size: 25px;
+  }
+  .centralWrap {
+    width: calc(100% - 10px);
+    height: auto;
+    padding: 5px;
+  }
+  .centralWrapSmall {
+    width: 98%;
+    flex-direction: column;
+  }
+
+  .listOfServWrap {
+    width: calc(300px - 10px);
+    height: auto;
+    padding: 5px;
+    background: var(--secondary-color);
+    border-radius: 10px;
+    align-self: center;
+  }
+  .servListH2 {
+    font-size: 25px;
+  }
+  .linkSerc {
+    font-size: 20px;
+  }
+  .listLi {
+    height: 60px;
+  }
+  .descriptionWrap {
+    width: 98%;
+    align-items: center;
+  }
+  .firstDescH {
+    font-size: 30px;
+    text-align: center;
+  }
+  .firstDescP {
+    text-align: center;
+    font-size: 18px;
+  }
+  .whatOfferWrap {
+    width: 99%;
+  }
+  .titleOffer {
+    font-size: 30px;
+    text-align: center;
+  }
+  .titleOfferP {
+    width: 99%;
+  }
+}
+@media only screen and (max-width: 700px) and (min-width: 479px) {
+  .sectionTitle {
+    height: 200px;
+  }
+  .serviceTitleH1 {
+    font-size: 25px;
+  }
+  .centralWrap {
+    width: calc(100% - 10px);
+    height: auto;
+    padding: 5px;
+  }
+  .centralWrapSmall {
+    width: 98%;
+    flex-direction: column;
+  }
+
+  .linkSerc {
+    font-size: 20px;
+  }
+  .listLi {
+    height: 60px;
+  }
+  .descriptionWrap {
+    width: 98%;
+    align-items: center;
+  }
+  .firstDescH {
+    font-size: 30px;
+    text-align: center;
+  }
+  .firstDescP {
+    text-align: center;
+    font-size: 18px;
+  }
+  .whatOfferWrap {
+    width: 99%;
+  }
+  .titleOffer {
+    font-size: 30px;
+    text-align: center;
+  }
+  .titleOfferP {
+    width: 99%;
+  }
+  .listOfServWrap {
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 960px) and (min-width: 700px) {
+  .sectionTitle {
+    height: 200px;
+  }
+  .serviceTitleH1 {
+    font-size: 25px;
+  }
+  .centralWrap {
+    width: calc(100% - 10px);
+    height: auto;
+    padding: 5px;
+  }
+  .centralWrapSmall {
+    width: 98%;
+    flex-direction: column;
+  }
+
+  .linkSerc {
+    font-size: 20px;
+  }
+  .listLi {
+    height: 60px;
+  }
+  .descriptionWrap {
+    width: 98%;
+    align-items: center;
+  }
+  .firstDescH {
+    font-size: 30px;
+    text-align: center;
+  }
+  .firstDescP {
+    text-align: center;
+    font-size: 18px;
+  }
+  .whatOfferWrap {
+    width: 99%;
+  }
+  .titleOffer {
+    font-size: 30px;
+    text-align: center;
+  }
+  .titleOfferP {
+    width: 99%;
+  }
+  .listOfServWrap {
+    align-self: center;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 960px) {
+  .centralWrapSmall {
+    width: 100%;
+  }
+  .centralWrap {
+    padding-left: 3px;
+    padding-right: 3px;
+    width: calc(100% - 6px);
+  }
+  .listOfServWrap {
+    width: calc(410px - 40px);
+    margin-left: 20px;
+    padding: 20px;
+  }
+}

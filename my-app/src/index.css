@@ -1,153 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap");
 body {
-
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
-.headerStyle{
+.headerStyle {
   position: relative;
-        display: flex;
-  
-        top: 0px;
-        width: 100%;
-        height: 100vh;
+  display: flex;
+
+  top: 0px;
+  width: 100%;
+  height: 100vh;
 }
-body{
+body {
   display: flex;
   flex-direction: column;
 }
-.containerHeader{
-    
+.containerHeader {
   position: absolute;
-   z-index: 1;
-   width: 100%;
-   
+  z-index: 1;
+  width: 100%;
 }
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 10.610079575596817vh;
 }
-nav ul{
+nav ul {
   display: flex;
-      list-style: none;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0px;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
 }
-nav ul li a{
+nav ul li a {
   position: relative;
   padding-right: 1.8vw;
   padding-left: 1.8vw;
-  border-right: 2px solid ;
-  font-family: 'Jost', sans-serif;
+  border-right: 2px solid;
+  font-family: "Jost", sans-serif;
   font-size: 1rem;
-    font-weight: 500;
-    line-height: 90px;
-    color: white;
+  font-weight: 500;
+  line-height: 90px;
+  color: white;
 }
-nav ul li a::before{
-  content: '';
+nav ul li a::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 0%;
   height: 100%;
-  background: #0DEEBA;
+  background: #00aef7;
   z-index: -1;
 
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-nav ul li a:hover::before{
-width: 100%;
+nav ul li a:hover::before {
+  width: 100%;
 }
 
-nav ul li:last-child a{
+nav ul li:last-child a {
   border-right: 0;
 }
-nav span{
-  color:#0DEEBA;
+nav span {
+  color: #00aef7;
 }
 
-a{
+a {
   text-decoration: none;
 }
-nav h1{
+nav h1 {
   display: flex;
-      padding-left: 3.125vw;
-      font-family: 'Jost', sans-serif;
-      color: white;
+  padding-left: 3.125vw;
+  font-family: "Jost", sans-serif;
+  color: white;
 }
-nav .iconWrap{
+nav .iconWrap {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 36px;
   height: 36px;
-   margin-right: 3.125vw;
-   border: 1px solid white;
-   border-radius: 3px;
-   background: white;
+  margin-right: 3.125vw;
+  border: 1px solid white;
+  border-radius: 3px;
+  background: white;
 }
-nav .iconWrap .icon{
-font-size: 20px;
-cursor: pointer;
+nav .iconWrap .icon {
+  font-size: 20px;
+  cursor: pointer;
 }
 
-
-nav .iconWrap:hover{
+nav .iconWrap:hover {
   width: 40px;
   height: 40px;
   margin-right: 2.917vw;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
-  box-shadow: 1px 5px 10px #0DEEBA;
-  }
-nav .lang{
+  box-shadow: 1px 5px 10px #00aef7;
+}
+nav .lang {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-nav .lang h4 a{
+nav .lang h4 a {
   display: flex;
-  color:white;
+  color: white;
   cursor: pointer;
   padding-right: 10px;
 }
-#titleFirst{
+#titleFirst {
   display: flex;
- padding: 0;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- height: 66.3129973474801vh;
- padding-bottom: 23.076923076923077vh;
- width: 100%;
-
- 
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 66.3129973474801vh;
+  padding-bottom: 23.076923076923077vh;
+  width: 100%;
 }
-#titleFirst .titleFirst{
-margin-top: 25.19893899204244vh;
+#titleFirst .titleFirst {
+  margin-top: 25.19893899204244vh;
   display: flex;
- justify-self: end;
- height: 50%;
-  
+  justify-self: end;
+  height: 50%;
 }
-.titleFirst h1{
+.titleFirst h1 {
   color: white;
   font-size: 40px;
- 
 }
-#titleFirst button{
+#titleFirst button {
   position: relative;
   width: 130px;
   height: 40px;
@@ -155,56 +149,51 @@ margin-top: 25.19893899204244vh;
   border: 0;
   color: white;
   font-size: 25px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   cursor: pointer;
 }
-#titleFirst button a{
- 
+#titleFirst button a {
   color: white;
- 
 }
-#titleFirst button::before{
-  content: '';
+#titleFirst button::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 35%;
   height: 100%;
-  background:#0DEEBA;
+  background: #00aef7;
   z-index: -1;
   color: white;
   font-size: 25px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
-#titleFirst button:hover::before{
+#titleFirst button:hover::before {
   width: 100%;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-#productList{
-  
- padding: 0;
- height: 100%;
-height: 110vh;
-width: 100%;
+#productList {
+  padding: 0;
+  height: 100%;
+  height: 110vh;
+  width: 100%;
 }
-#productList h2{
+#productList h2 {
   display: flex;
   justify-content: center;
   margin-top: 30px;
   font-size: 40px;
-color: white;
+  color: white;
 }
-#productList .productList{
+#productList .productList {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   padding-bottom: 80px;
-  
-  
 }
-#productList .productList div{
-  display: 'flex';
+#productList .productList div {
+  display: "flex";
   overflow: hidden;
   position: relative;
   width: 25%;
@@ -217,15 +206,14 @@ color: white;
 #productList .productList div:hover {
   height: 410px;
   background: white;
-  
 }
 #productList .productList div h1 {
   position: absolute;
-  top: 30.50397877984085vh;
+  top: 20vh;
   left: 1.563vw;
   color: white;
   font-size: 25px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   transition: all 300ms ease-in-out;
 }
 
@@ -239,7 +227,7 @@ color: white;
   left: 30px;
   color: black;
   font-size: 20px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 #productList .productList div h2 {
   position: absolute;
@@ -247,10 +235,10 @@ color: white;
   left: 30px;
   color: white;
   font-size: 30px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 #productList .productList div:hover h2 {
-color: black;
+  color: black;
 }
 #productList .productList div h3 {
   position: absolute;
@@ -260,80 +248,75 @@ color: black;
   margin-top: 0px;
   color: white;
   font-size: 70px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   transition: all 300ms ease-in-out;
 }
 #productList .productList div:hover h3 {
   left: 150px;
   color: #eeeeee;
-
 }
-#about{
+#about {
   width: 100%;
   padding-top: 80px;
-
 }
-#about h3{
+#about h3 {
   display: flex;
   justify-content: center;
   margin-top: 30px;
   font-size: 60px;
-color: white;
+  color: white;
 }
 #about .about {
   display: flex;
   justify-content: center;
-
 }
-.about .block{
+.about .block {
   display: flex;
   flex-direction: column;
   justify-content: start;
   width: 25%;
-  
-  margin-left: 30px;
-    
-}
-.about .block .minblock{
-display: flex;
-position: relative;
-align-items: center;
-justify-content: center;
-width: 100px;
-height: 100px;
-background: white;
-border-radius: 40px;
-}
-.about .block .minblock::before{
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 0%;
-height: 100%;
-border-radius: 40px;
-background: #0DEEBA;
-}
-.about .block .minblock:hover::before{
- transition: all .5s ease-in-out;
- width: 100%;
 
+  margin-left: 30px;
 }
-.minblock h2{
-color: black;
-z-index: 1;
-font-size: 40px;
-  font-family: 'Jost', sans-serif;
+.about .block .minblock {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 40px;
 }
-.about .block h1{
+.about .block .minblock::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 40px;
+  background: #00aef7;
+}
+.about .block .minblock:hover::before {
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+.minblock h2 {
+  color: black;
+  z-index: 1;
   font-size: 40px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
+}
+.about .block h1 {
+  font-size: 40px;
+  font-family: "Jost", sans-serif;
   color: white;
 }
 
-.about .block p{
+.about .block p {
   font-size: 18px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   color: white;
 }
 .technologies {
@@ -342,170 +325,160 @@ font-size: 40px;
   flex-direction: column;
   align-items: center;
 }
-.technologies h4{
-  
+.technologies h4 {
   font-size: 60px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   color: white;
 }
 .techIcon {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .techIcon .icon {
   display: flex;
- font-size: 80px;
- margin-right: 20px;
- margin-bottom: 30px;
-  
+  font-size: 80px;
+  margin-right: 20px;
+  margin-bottom: 30px;
 }
 .techIcon .icon:hover {
   font-size: 100px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-nav .outLineMenu{
+nav .outLineMenu {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 36px;
   height: 36px;
   margin-left: 10px;
-   border: 1px solid white;
-   border-radius: 3px;
-   background: white;
-
+  border: 1px solid white;
+  border-radius: 3px;
+  background: white;
+  flex-shrink: 0;
 }
 /*sddddddddddddddddddddddddddddd*/
-#mailSend{
-  width: 100% ;
-  
+#mailSend {
+  width: 100%;
 }
-.containerInfo{
+.containerInfo {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
- }
- .columInfo {
-   display: flex;
-   width: 40%;
-   height: 500px;
-   margin-bottom: 100px;
-   justify-content: space-around;
- }
- .columInfoTe h2 {
-   font-size: 30px;
-   margin-top: 150px;
-   color: white;
-   font-weight: bold;
-   font-family: 'Jost', sans-serif;
- 
- }
- .columInfoTe strong{
+}
+.columInfo {
+  display: flex;
+  width: 40%;
+  height: 500px;
+  margin-bottom: 100px;
+  justify-content: space-around;
+}
+.columInfoTe h2 {
+  font-size: 30px;
+  margin-top: 150px;
   color: white;
-  font-family: 'Jost', sans-serif;
+  font-weight: bold;
+  font-family: "Jost", sans-serif;
+}
+.columInfoTe strong {
+  color: white;
+  font-family: "Jost", sans-serif;
   font-size: 25px;
- }
- .columInfoTe p{
+}
+.columInfoTe p {
   color: white;
-  font-family: 'Jost', sans-serif;
-  
- }
- .columInfoTe a{
-  font-family: 'Jost', sans-serif;
-   text-decoration: none;
-   font-size: 20px;
-   color: white;
- }
- .columInfoTe h1{
-   margin-top: 20px;
- }
- .wrapper{
+  font-family: "Jost", sans-serif;
+}
+.columInfoTe a {
+  font-family: "Jost", sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+.columInfoTe h1 {
+  margin-top: 20px;
+}
+.wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 60%;
- }
- .contact-form{
-   margin: 0 auto;
-   display: flex;
-    width: 100%;
- }
- .input-fields{
-   display: flex;
-   flex-direction: column;
-   margin-right: 4%;
-  
- }
- .input-fields,
- .msg {
-   width: 46%;
- }
- .input-fields .input,
- .msg textarea {
-   margin: 10px 0;
-   background: transparent;
-   border: 0;
-   border-bottom: 2px solid white;
-   padding: 10px;
-   color: white;
-   width: 100%;
- }
- .msg textarea{
-   height: 83%;
- }
- ::-webkit-input-placeholder{
-   color: white;
-   font-weight: bolder;
- }
- ::-moz-input-placeholder{
-   color: white;
-   font-weight: bolder;
- }
- ::-ms-input-placeholder{
-   color: white;
-   font-weight: bolder;
- }
- .btn{
+}
+.contact-form {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+}
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+.input-fields,
+.msg {
+  width: 46%;
+}
+.input-fields .input,
+.msg textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid white;
+  padding: 10px;
+  color: white;
+  width: 100%;
+}
+.msg textarea {
+  height: 83%;
+}
+::-webkit-input-placeholder {
+  color: white;
+  font-weight: bolder;
+}
+::-moz-input-placeholder {
+  color: white;
+  font-weight: bolder;
+}
+::-ms-input-placeholder {
+  color: white;
+  font-weight: bolder;
+}
+.btn {
   position: relative;
-   background: none;
-   text-align: center;
-   padding: 15px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: white;
-   width: 100%;
-   border: none;
-   font-size: 20px;
-   cursor: pointer;
-   text-transform: uppercase;
-   height: 40px;
-   font-family: 'Jost', sans-serif;
-   
- }
- .btn::before{
-  content: '';
-  width:40%;
+  background: none;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 40px;
+  font-family: "Jost", sans-serif;
+}
+.btn::before {
+  content: "";
+  width: 40%;
   z-index: -1;
-  height: 100%; 
-  background: #0DEEBA;
-  top:0;
+  height: 100%;
+  background: #00aef7;
+  top: 0;
   left: 0;
   position: absolute;
- }
- .btn:hover::before{
-  
+}
+.btn:hover::before {
   width: 100%;
-  color:black;
-  transition: all .5s ease-in-out;
-  background: #0DEEBA;
-  
- }
- footer{
+  color: black;
+  transition: all 0.5s ease-in-out;
+  background: #00aef7;
+}
+footer {
   width: 100%;
   height: 40px;
 
@@ -514,17 +487,16 @@ nav .outLineMenu{
   justify-content: center;
   align-items: center;
   bottom: 0;
- }
- 
- footer h6{ 
-  font-family: 'Jost', sans-serif;
-  font-size: 15px;
-  color:white;
 }
 
+footer h6 {
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
+  color: white;
+}
 
 /*ccccccccccccccoooooooooooonnnnnnnnnnnntttttttttttttttaaaaaaaaaaaaacccccccccctttttttt*/
-.contactDiv{
+.contactDiv {
   display: flex;
   width: 100%;
   height: 80vh;
@@ -532,43 +504,40 @@ nav .outLineMenu{
   align-items: center;
 }
 .contactFo {
-display: flex;
-flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
-.contactFo h1{
-  font-family: 'Jost', sans-serif;
-  color:white;
+.contactFo h1 {
+  font-family: "Jost", sans-serif;
+  color: white;
   font-size: 40px;
-  
 }
-.contactFo h2{
-  font-family: 'Jost', sans-serif;
-  color:white;
+.contactFo h2 {
+  font-family: "Jost", sans-serif;
+  color: white;
   font-size: 35px;
 }
-.contactFo a{
-  font-family: 'Jost', sans-serif;
-  color:white;
+.contactFo a {
+  font-family: "Jost", sans-serif;
+  color: white;
   font-size: 30px;
-  
 }
 
-.fixedButton{
+.fixedButton {
   position: fixed;
-  color:white;
-  top:50vh;
-  
+  color: white;
+  top: 50vh;
+
   transform: rotate(-90deg);
   z-index: 2;
   background: none;
   cursor: pointer;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 1.5em;
   left: -1%;
   border: none;
 }
-.contacktAll{
+.contacktAll {
   position: fixed;
   z-index: 3;
   opacity: 0.9;
@@ -576,27 +545,25 @@ flex-direction: column;
   width: 100%;
   height: 100vh;
 }
-.contacktAll{
+.contacktAll {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
-.headerContact{
+.headerContact {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 1.5em;
   color: white;
-
 }
-.bodyContact{
+.bodyContact {
   padding-top: 10%;
   width: 70%;
 }
-.up{
+.up {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -618,17 +585,17 @@ flex-direction: column;
   right: 0;
   height: auto;
   width: auto;
- 
-  animation-duration: 2.0s;
+
+  animation-duration: 2s;
   animation-name: pulse_1;
   animation-iteration-count: infinite;
   z-index: -1;
 }
- 
+
 .pulse-button__rings:nth-child(2) {
   animation-name: pulse_2;
 }
- 
+
 .pulse-button__rings:nth-child(3) {
   animation-name: pulse_3;
 }
@@ -637,42 +604,42 @@ flex-direction: column;
     opacity: 1;
     transform: scale(0.9, 0.9);
   }
- 
+
   to {
     opacity: 0;
     transform: scale(1.3, 1.3);
   }
 }
- 
+
 @keyframes pulse_2 {
   from {
     opacity: 1;
     transform: scale(0.8, 0.8);
   }
- 
+
   to {
     opacity: 0;
     transform: scale(1.5, 1.5);
   }
 }
- 
+
 @keyframes pulse_3 {
   from {
     opacity: 1;
     transform: scale(0.8, 0.8);
   }
- 
+
   to {
     opacity: 0;
     transform: scale(1.7, 1.7);
   }
 }
-.menu{
+.menu {
   position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
-  top:0;
+  top: 0;
   left: 0;
   width: 40%;
   height: 100vh;
@@ -680,229 +647,103 @@ flex-direction: column;
   opacity: 0.8;
   z-index: 3;
 }
-.menu .ulMobile{
+.menu .ulMobile {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.liMobile a{
+.liMobile a {
   border: none;
-  
-  font-family: 'Jost', sans-serif;
+
+  font-family: "Jost", sans-serif;
   font-size: 2em;
   color: black;
 }
-@media only screen and (max-width: 479px) and (min-width: 300px) { 
-  #mailSend{
-    width: 100% ;
-   margin-bottom: 60px;
+@media only screen and (max-width: 479px) and (min-width: 300px) {
+  nav .iconWrap {
+    width: 0;
+    height: 0;
   }
-  .titleFirst {
-    width: 75%;
+  .menu {
+    width: 100%;
   }
-  .titleFirst h1{
-    color: white;
-    font-size: 20px;
-  }
-  .fixedButton{
-      font-size: 1em;
-    left: -5%;
-    border: none;
-  }
-  #productList{
-  
-    padding: 0;
-   height: 280vh;
-   width: 100%;
-   }
-  #productList .productList div{
-    display: 'flex';
-    overflow: hidden;
-    position: relative;
-    width: 80%;
-    height: 40vh;
-    border: 2px solid white;
-    margin-right: 2%;
-    margin-top: 2%;
-    transition: all 300ms ease-in-out;
-  }
-  #productList .productList div h1 {
-    top: 26.52519893899204vh;
-    left: 1.563vw;
-  }
-  #productList .productList div:hover h1 {
-    top: 34.48275862068966vh;
-  }
-  #productList .productList div p {
-    top: 39.787798408488065vh;
-    left: 1.563vw;
-  }
-  .about .block{
-    width: 80%;
-  }
-  #about .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .technologies h4{
-    font-size: 50px;
-  }
-  .techIcon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.techIcon .icon {
-  display: flex;
- font-size: 130px;
- margin-right: 20px;
- margin-bottom: 30px;
-  
-}
-.techIcon .icon:hover {
-  font-size: 150px;
-  transition: all .3s ease-in-out;
-}
-.containerInfo{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
- .columInfo {
-  display: flex;
-  width: 80%;
- }
- .wrapper{
-  width: 80%;
- }
- .up{
-  left: 80%;
- }
- }
- @media only screen and (max-width: 700px) and (min-width: 479px) { 
-  #mailSend{
-    width: 100% ;
-    margin-bottom: 60px;
-  }
-  .titleFirst {
-    width: 75%;
-  }
-  .titleFirst h1{
-    color: white;
-    font-size: 20px;
-  }
-  .fixedButton{
-      font-size: 1em;
-    left: -4%;
-    border: none;
-  }
-  #productList{
-  
-    padding: 0;
-   height: 280vh;
-   width: 100%;
-   }
-  #productList .productList div{
-    display: 'flex';
-    overflow: hidden;
-    position: relative;
-    width: 60%;
-    height: 40vh;
-    border: 2px solid white;
-    margin-right: 2%;
-    margin-top: 2%;
-    transition: all 300ms ease-in-out;
-  }
-  #productList .productList div h1 {
-    top: 26.52519893899204vh;
-    left: 1.563vw;
-  }
-  #productList .productList div:hover h1 {
-    top: 34.48275862068966vh;
-  }
-  #productList .productList div p {
-    top: 39.787798408488065vh;
-    left: 1.563vw;
-  }
-  #productList .productList div h3 {
-left: 420px;
-  }
-  .about .block{
-    width: 80%;
-  }
-  #about .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .technologies h4{
-    font-size: 50px;
-  }
-  .techIcon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.techIcon .icon {
-  display: flex;
- font-size: 130px;
- margin-right: 20px;
- margin-bottom: 30px;
-  
-}
-.techIcon .icon:hover {
-  font-size: 150px;
-  transition: all .3s ease-in-out;
-}
-.containerInfo{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
- .columInfo {
-  display: flex;
-  width: 80%;
- }
- .wrapper{
-  width: 80%;
- }
- .up{
-  left: 80%;
- }
-}
- @media only screen and (max-width: 960px) and (min-width: 700px) { 
-  #mailSend{
-    width: 100% ;
-    margin-bottom: 60px;
-  }
-  .titleFirst {
-    width: 75%;
-  }
-  .titleFirst h1{
+  .contactFo h1 {
+    font-family: "Jost", sans-serif;
     color: white;
     font-size: 30px;
   }
-  .fixedButton{
-      font-size: 1em;
-    left: -2%;
+  .contactFo h2 {
+    font-family: "Jost", sans-serif;
+    color: white;
+    font-size: 18px;
+  }
+  .contactFo a {
+    font-family: "Jost", sans-serif;
+    color: white;
+    font-size: 20px;
+  }
+  .contactDiv {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    position: relative;
+    background: none;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 40px;
+    font-family: "Jost", sans-serif;
+  }
+  .input-fields {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 4%);
+    margin-right: 4%;
+  }
+  .msg {
+    width: calc(100% - 4%);
+  }
+  #mailSend {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .titleFirst {
+    width: 75%;
+  }
+  .titleFirst h1 {
+    color: white;
+    font-size: 20px;
+  }
+  .fixedButton {
+    font-size: 1em;
+    left: -5%;
     border: none;
   }
-  #productList{
-  
+  #productList {
     padding: 0;
-   height: 160vh;
-   width: 100%;
-   }
-  #productList .productList div{
-    display: 'flex';
+    height: 280vh;
+    width: 100%;
+  }
+  #productList .productList div {
+    display: "flex";
     overflow: hidden;
     position: relative;
-    width: 40%;
-    height: 40vh;
+    width: 80%;
+    height: 340px;
     border: 2px solid white;
     margin-right: 2%;
     margin-top: 2%;
@@ -913,13 +754,14 @@ left: 420px;
     left: 1.563vw;
   }
   #productList .productList div:hover h1 {
-    top: 34.48275862068966vh;
+    top: 240px;
   }
+
   #productList .productList div p {
-    top: 39.787798408488065vh;
+    top: 290px;
     left: 1.563vw;
   }
-  .about .block{
+  .about .block {
     width: 80%;
   }
   #about .about {
@@ -927,40 +769,384 @@ left: 420px;
     flex-direction: column;
     align-items: center;
   }
-  .technologies h4{
+  .technologies h4 {
     font-size: 50px;
   }
   .techIcon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .techIcon .icon {
+    display: flex;
+    font-size: 130px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+  .techIcon .icon:hover {
+    font-size: 150px;
+    transition: all 0.3s ease-in-out;
+  }
+  .containerInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .columInfo {
+    display: flex;
+    width: 80%;
+  }
+  .wrapper {
+    width: 80%;
+  }
+  .up {
+    left: 80%;
+  }
+  .contact-form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
 }
-.techIcon .icon {
-  display: flex;
- font-size: 130px;
- margin-right: 20px;
- margin-bottom: 30px;
-  
+@media only screen and (max-width: 700px) and (min-width: 479px) {
+  .menu {
+    width: 100%;
+  }
+  .contactFo h1 {
+    font-family: "Jost", sans-serif;
+    color: white;
+    font-size: 30px;
+  }
+  .contactFo h2 {
+    font-family: "Jost", sans-serif;
+    color: white;
+    font-size: 18px;
+  }
+  .contactFo a {
+    font-family: "Jost", sans-serif;
+    color: white;
+    font-size: 20px;
+  }
+  .contactDiv {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-form {
+    margin: 0 auto;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn {
+    position: relative;
+    background: none;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 40px;
+    font-family: "Jost", sans-serif;
+  }
+  .input-fields {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 4%);
+    margin-right: 4%;
+  }
+  .msg {
+    width: calc(100% - 4%);
+  }
+  #mailSend {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .titleFirst {
+    width: 75%;
+  }
+  .titleFirst h1 {
+    color: white;
+    font-size: 20px;
+  }
+  .fixedButton {
+    font-size: 1em;
+    left: -4%;
+    border: none;
+  }
+  #productList {
+    padding: 0;
+    height: 280vh;
+    width: 100%;
+  }
+  #productList .productList div {
+    display: "flex";
+    overflow: hidden;
+    position: relative;
+    width: 60%;
+    height: 340px;
+    border: 2px solid white;
+    margin-right: 2%;
+    margin-top: 2%;
+    transition: all 300ms ease-in-out;
+  }
+  #productList .productList div h1 {
+    top: 26.52519893899204vh;
+    left: 1.563vw;
+  }
+  #productList .productList div:hover h1 {
+    top: 240px;
+  }
+  #productList .productList div p {
+    top: 290px;
+    left: 1.563vw;
+  }
+  #productList .productList div h3 {
+    left: 420px;
+  }
+  .about .block {
+    width: 80%;
+  }
+  #about .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .technologies h4 {
+    font-size: 50px;
+  }
+  .techIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .techIcon .icon {
+    display: flex;
+    font-size: 130px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+  .techIcon .icon:hover {
+    font-size: 150px;
+    transition: all 0.3s ease-in-out;
+  }
+  .containerInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .columInfo {
+    display: flex;
+    width: 80%;
+  }
+  .wrapper {
+    width: 80%;
+  }
+  .up {
+    left: 80%;
+  }
 }
-.techIcon .icon:hover {
-  font-size: 150px;
-  transition: all .3s ease-in-out;
+@media only screen and (max-width: 1200px) and (min-width: 960px) {
+  #mailSend {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .titleFirst {
+    width: 75%;
+  }
+  .titleFirst h1 {
+    color: white;
+    font-size: 30px;
+  }
+  .fixedButton {
+    font-size: 1em;
+    left: -2%;
+    border: none;
+  }
+  #productList {
+    padding: 0;
+    height: 160vh;
+    width: 100%;
+  }
+  #productList .productList div {
+    display: "flex";
+    overflow: hidden;
+    position: relative;
+    width: 40%;
+    height: 360px;
+    border: 2px solid white;
+    margin-right: 2%;
+    margin-top: 2%;
+    transition: all 300ms ease-in-out;
+  }
+  #productList .productList div h1 {
+    top: 26.52519893899204vh;
+    left: 1.563vw;
+  }
+  #productList .productList div:hover h1 {
+    top: 240px;
+  }
+  #productList .productList div p {
+    top: 290px;
+    left: 1.563vw;
+  }
+
+  .technologies h4 {
+    font-size: 50px;
+  }
+  .techIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .techIcon .icon {
+    display: flex;
+    font-size: 130px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+  .techIcon .icon:hover {
+    font-size: 150px;
+    transition: all 0.3s ease-in-out;
+  }
+  .containerInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .columInfo {
+    display: flex;
+    width: 80%;
+  }
+  .wrapper {
+    width: 80%;
+  }
+  .up {
+    left: 90%;
+  }
 }
-.containerInfo{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
- .columInfo {
-  display: flex;
-  width: 80%;
- }
- .wrapper{
-  width: 80%;
- }
- .up{
-  left: 90%;
- }
- }
- 
+@media only screen and (max-width: 960px) and (min-width: 700px) {
+  .contactDiv {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactFo h1 {
+    font-family: "Jost", sans-serif;
+    color: white;
+    font-size: 30px;
+  }
+  .contactFo h2 {
+    font-family: "Jost", sans-serif;
+    color: white;
+    font-size: 18px;
+  }
+  .contactFo a {
+    font-family: "Jost", sans-serif;
+    color: white;
+    font-size: 20px;
+  }
+  #mailSend {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .titleFirst {
+    width: 75%;
+  }
+  .titleFirst h1 {
+    color: white;
+    font-size: 30px;
+  }
+  .fixedButton {
+    font-size: 1em;
+    left: -2%;
+    border: none;
+  }
+  #productList {
+    padding: 0;
+    height: 160vh;
+    width: 100%;
+  }
+  #productList .productList div {
+    display: "flex";
+    overflow: hidden;
+    position: relative;
+    width: 40%;
+    height: 360px;
+    border: 2px solid white;
+    margin-right: 2%;
+    margin-top: 2%;
+    transition: all 300ms ease-in-out;
+  }
+  #productList .productList div h1 {
+    top: 26.52519893899204vh;
+    left: 1.563vw;
+  }
+  #productList .productList div:hover h1 {
+    top: 240px;
+  }
+  #productList .productList div p {
+    top: 290px;
+    left: 1.563vw;
+  }
+  .about .block {
+    width: 80%;
+  }
+  #about .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .technologies h4 {
+    font-size: 50px;
+  }
+  .techIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .techIcon .icon {
+    display: flex;
+    font-size: 130px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+  .techIcon .icon:hover {
+    font-size: 150px;
+    transition: all 0.3s ease-in-out;
+  }
+  .containerInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .columInfo {
+    display: flex;
+    width: 80%;
+  }
+  .wrapper {
+    width: 80%;
+  }
+  .up {
+    left: 90%;
+  }
+}
