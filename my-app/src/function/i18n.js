@@ -17,7 +17,7 @@ i18n
           description: {
             part1: {
               mainPage: {
-                mainTitle: "We create effective websites for your business",
+                mainTitle: "Website development services",
                 mainButSend: "Write to us",
                 conForm: "Contact form",
                 mainButStart: "Start",
@@ -37,9 +37,10 @@ i18n
                 designTitile: "Progressive design",
                 designDesc:
                   "Our design team will develop a unique design for your brand",
-                optimizaTitile: "Search optimization",
+
+                optimizaTitile: "Web Applications",
                 optimizaDesc:
-                  "Your site will be optimized as much as possible for search engines",
+                  "Convenient web applications for efficient online use.",
                 aboutUsTitle: "About us",
                 aboutFirstTitle: "Experience",
                 aboutFirst:
@@ -65,7 +66,27 @@ i18n
                 headerMain: "Home",
                 headerAbout: "About us",
                 headerServ: "Services",
+                blg: "Blog",
                 headerContact: "Contact",
+                fourFo: "Sorry, but this page does not exist.",
+                returnTo: "Back to Home",
+                footer: "Site map",
+              },
+              footer: {
+                h1: "Site Map",
+                main: "Home",
+                mainEn: "English Version",
+                mainUk: "Ukrainian Version",
+                serv: "Services",
+                landi: "One-page Websites",
+                bussin: "Business Website",
+                store: "Online Store",
+                app: "Web Applications",
+                crm: "CRM Systems",
+                constact: "Contacts",
+                about: "About Us",
+                blog: "Blog",
+                sitemap: "Site Map",
               },
               services: {
                 title: "Services",
@@ -82,6 +103,10 @@ i18n
                 fourOfferName: "Web App Development",
                 fourOfferDesc:
                   "Expert Web App Development Services: Tailored Digital Solutions for Your Business.",
+
+                sixOfferName: "Web Application Design",
+                sixOfferDesc:
+                  "Professional web application design services: Customized digital solutions for your business.",
                 fiveOfferName: "CRM Integration",
                 fiveOfferDesc:
                   "Effortless CRM and Software Integration Solutions for Streamlined Operations",
@@ -121,7 +146,7 @@ i18n
                 inf: "Contact",
               },
               landing: {
-                title: "Landing page",
+                title: "Landing page development services",
                 listOfSerc: "List Of Services",
                 firstTitle:
                   "Welcome to the World of High-Converting Landing Pages!",
@@ -150,7 +175,7 @@ i18n
                   "Results-oriented: We work towards outcomes and always align with your goals.",
               },
               bussines: {
-                title: "Business Website",
+                title: "Business website development",
                 listOfSerc: "List Of Services",
                 firstTitle:
                   "Welcome to the World of High-Performing Business Websites!",
@@ -180,7 +205,7 @@ i18n
                   "Marketing agencies seeking a reliable partner in web development.",
               },
               store: {
-                title: "E-commerce Website",
+                title: "Custom e-commerce website development",
                 listOfSerc: "List Of Services",
                 firstTitle: "Welcome to the World of Profitable Online Stores!",
                 firstDesc:
@@ -209,7 +234,7 @@ i18n
                   "Marketing agencies in search of a reliable web development partner.",
               },
               web: {
-                title: "Web Application Development",
+                title: "Mobile app development services",
                 listOfSerc: "List Of Services",
                 firstTitle:
                   "Welcome to the World of Convertible Web Applications!",
@@ -239,7 +264,7 @@ i18n
                   "Marketing agencies seeking a reliable partner for web application development.",
               },
               crm: {
-                title: "CRM Integration ",
+                title: "CRM integration",
                 listOfSerc: "List Of Services",
                 firstTitle: "Welcome to the World of CRM Integration!",
                 firstDesc:
@@ -267,8 +292,36 @@ i18n
                 fourThre:
                   "Marketing agencies in search of a reliable partner for CRM integration.",
               },
+              design: {
+                title: "Custom website design",
+                listOfSerc: "List of Services",
+                firstTitle: "Welcome to the World of Website Design!",
+                firstDesc:
+                  "It's a well-known fact: the first impression matters. In the world of online business, website design serves as your virtual entrance. On our page, you will learn why creating a website design is the first step to the success of your online project.",
+                secondTitle: "What is Website Design and Why is it Important?",
+                secondDesc:
+                  "Website design involves creating an aesthetically pleasing and functional interface to ensure a positive user experience. Whether you are developing a personal website, a corporate portal, or an online store, design plays a crucial role in interacting with your audience.",
+                threTitle: "Our Website Design Development Service",
+                threDesc:
+                  "Our team of professionals has extensive experience in developing website designs of various complexities. We offer services for:",
+                threFirst:
+                  "Individual Solutions: Your website design will be tailored to meet the unique needs of your project, providing a seamless interface.",
+                threSecond:
+                  "Design Optimization: We know how to make your website attractive and effective for your visitors, increasing engagement.",
+                threThre:
+                  "Analytics and Continuous Improvement: We evaluate results and continually optimize your website design for the best outcomes.",
+                fourTitle: "Who is This Service For?",
+                fourDesc:
+                  "Our team of professionals has extensive experience in developing website designs of various complexities. We offer services for:",
+                fourFirst:
+                  "Entrepreneurs and startups aiming to create an effective virtual tool for their business.",
+                fourSecond:
+                  "Business owners looking to improve their online presence and impress their audience.",
+                fourThre:
+                  "Marketing agencies seeking a reliable partner for the development of innovative web projects.",
+              },
               aboutUs: {
-                title: "About Us",
+                title: "The history of the web studio WebUi-Studio",
                 firstText:
                   "We are the creators of innovative and impressive web solutions that propel your business forward and make it more accessible in the online world. Our team of dedicated professionals boasts years of experience in website and app development, giving us the confidence to deliver exceptional results for you.",
                 secondTitle: "Our goal",
@@ -292,44 +345,45 @@ i18n
                   "Our company offers website development services for various industries, including landing pages, corporate websites, and e-commerce solutions. We will create a unique website for your business.",
               },
               landing: {
-                title:
-                  "Landing Page Development | Attract Your Target Audience",
+                title: "Web development landing page | WebUi-Studio",
                 description:
-                  "Create a stunning Landing Page with us. We make your products and services unforgettable for customers.",
+                  "Landing page development services for medium and small businesses. Custom design and affordable prices. Start selling your products today.",
               },
               bussines: {
                 title:
-                  "Business Website Development | Effective Online Presence for Your Brand",
+                  "Corporate / business website development | WebUi-Studio",
                 description:
-                  "Our team of developers creates high-performance business websites. Interested in increasing sales and boosting conversions? Entrust us with the development of your perfect business website and gain a significant online presence.",
+                  "Corporate or business website development services. Unique design in a corporate style. Order a business website at the best price right now.",
               },
               store: {
-                title:
-                  "E-commerce Website Development: Your Path to Online Success",
+                title: "E-commerce Website Development services | WebUi-Studio",
                 description:
-                  "WebUi Studio creates e-commerce stores that give you instant access to the world of online business. Transform your idea into a thriving venture today!",
+                  "Custom e-commerce website development services. We create online stores on platforms such as Magento, WordPress, Shopify, and others. Individual design and affordable pricing.",
               },
               web: {
-                title:
-                  "Web Application Development | Reliable and Innovative Solutions",
+                title: "Mobile app development company | WebUi-Studio",
                 description:
-                  "Our team of experts is ready to create web applications of any complexity. High quality, speed, and innovation for your business.",
+                  "Custom mobile app development services for Android and iOS. Development of corporate apps and e-commerce applications. WebUi-Studio is the best app development company near you.",
               },
               crm: {
-                title: "CRM Integration: Optimizing Your Business",
+                title: "CRM integration services | WebUi-Studio",
                 description:
-                  "Our team of experts offers CRM integration services for businesses of all sizes. Enhance customer relationship management and streamline your business processes with us.",
+                  "CRM integration services with e-commerce, VoIP telephony, Office 365, Shopify, social media, and other services. Affordable prices and high-quality services.",
+              },
+              design: {
+                title: "Website design services | WebUi-Studio",
+                description:
+                  "Custom website design development services for e-commerce, single-page and business websites. WebUi-Studio is a website design development company near you.",
               },
               aboutUs: {
-                title:
-                  "WebUi Studio - - Your Partners in Website and App Development",
-                description:
-                  "Our team is your trusted partner in creating impressive web solutions and applications. Learn more about us and how we help your business thrive in the online world.",
+                title: "Web studio WebUi-Studio",
+                description: "The best web design and website creation studio",
               },
               mainPage: {
-                title: "Web Development Studio | Crafting the Digital Space",
+                title: "Website development company | WebUi-Studio",
+
                 description:
-                  "Our web development studio offers a personalized approach and the best solutions for your online project. Order a website from professionals!",
+                  "Development of e-commerce websites for small and medium-sized businesses. Website development on Shopify, Magento, WordPress, and other popular CMS platforms. WebUi-Studio is the best website development company.",
               },
             },
           },
@@ -340,7 +394,8 @@ i18n
           description: {
             part1: {
               mainPage: {
-                mainTitle: "Ми створюємо ефективні сайти для вашого бізнесу",
+                mainTitle:
+                  "Створення сайтів для підвищення ефективності бізнесу",
                 mainButSend: "Напишіть нам",
                 conForm: "Контактна форма",
                 mainButStart: "Почати",
@@ -354,15 +409,15 @@ i18n
                 onlineTitile: "Інтернет-магазин",
                 onlineDesc:
                   "Ми створимо ідеальну платформу для ваших онлайн-продажів.",
-                crmInterTitile: "CRM інтеграфіця",
+                crmInterTitile: "CRM інтеграція",
                 crmInterDesc:
                   "CRM інтеграція: оптимізуйте ваш бізнес швидше та ефективніше.",
                 designTitile: "Прогресивний дизайн",
                 designDesc:
                   "Наша команда дизайнерів розробить унікальний дизайн для вашого бренду.",
-                optimizaTitile: "Пошукова оптимізація",
+                optimizaTitile: "Веб-додатки",
                 optimizaDesc:
-                  "Ваш сайт буде максимально оптимізований для пошукових систем.",
+                  "Зручні веб-додатки для ефективного користування онлайн.",
                 aboutUsTitle: "Про нас",
                 aboutFirstTitle: "Досвід",
                 aboutFirst:
@@ -388,7 +443,27 @@ i18n
                 headerMain: "Головна",
                 headerAbout: "Про нас",
                 headerServ: "Послуги",
+                blg: "Блог",
                 headerContact: "Контакти",
+                fourFo: "Вибачте, але такої сторінки не існує.",
+                returnTo: "Повернутись на головну",
+                footer: "Карта сайту",
+              },
+              footer: {
+                h1: "Карта сайту",
+                main: "Головна сторінка",
+                mainEn: "Англійська версія",
+                mainUk: "Українська версія",
+                serv: "Послуги",
+                landi: "Односторінкові сайти",
+                bussin: "Бізнес сайт",
+                store: "Інтрнет-магазин",
+                app: "Веб-додатки",
+                crm: "Црм системи",
+                constact: "Контакти",
+                about: "Про нас",
+                blog: "Блог",
+                sitemap: "Карта сайту",
               },
               services: {
                 title: "Наші послуги",
@@ -405,6 +480,9 @@ i18n
                 fourOfferName: "Розробка веб додатків",
                 fourOfferDesc:
                   "Професійна розробка веб-додатків: Індивідуальні цифрові рішення для вашого бізнесу",
+                sixOfferName: "Дизайн веб-додатків",
+                sixOfferDesc:
+                  "Професійні послуги з дизайну веб-додатків: Індивідуальні цифрові рішення для вашого бізнесу.",
                 fiveOfferName: "CRM інтеграція ",
                 fiveOfferDesc:
                   "Прості та ефективні рішення щодо інтеграції CRM та програмного забезпечення для оптимізації бізнес-процесів",
@@ -443,7 +521,7 @@ i18n
                 inf: "Контакти",
               },
               landing: {
-                title: "Односторіночний сайт",
+                title: "Створення лендінгу на замовлення",
                 listOfSerc: "Список послуг",
                 firstTitle: "Вітаємо вас у світі конвертуючих лендінгів!",
                 firstDesc:
@@ -471,7 +549,7 @@ i18n
                   "Орієнтовність на результат: Ми працюємо на результат і завжди виходимо на зустріч вашим цілям.",
               },
               bussines: {
-                title: "Бізнес-сайт",
+                title: "Корпоративний сайт: розробка та створення",
                 listOfSerc: "Список послуг",
                 firstTitle:
                   "Ласкаво просимо вас до світу високоефективних бізнес-сайтів!",
@@ -500,7 +578,7 @@ i18n
                   "Маркетингові агентства, які шукають надійного партнера у сфері веб-розробки.",
               },
               store: {
-                title: "Інтернет-магазин",
+                title: "Розробка та створення інтернет-магазину під ключ",
                 listOfSerc: "Список послуг",
                 firstTitle: "Вітаємо вас у світі онлайн-торгівлі!",
                 firstDesc:
@@ -528,7 +606,7 @@ i18n
                   "Маркетингові агентства, які шукають надійного партнера в галузі розробки веб-магазинів.",
               },
               web: {
-                title: "Веб-Додатки",
+                title: "Розробка мобільних додатків під ключ",
                 listOfSerc: "Список послуг",
                 firstTitle:
                   "Ласкаво просимо вас до світу розробки веб-додатків!",
@@ -557,7 +635,7 @@ i18n
                   "Маркетингових агентств, які шукають надійного партнера для створення веб-додатків.",
               },
               crm: {
-                title: "CRM Інтеграції",
+                title: "Інтеграція CRM систем під ключ",
                 listOfSerc: "Список послуг",
                 firstTitle: "Ласкаво просимо у світ Інтеграції CRM!",
                 firstDesc:
@@ -584,8 +662,36 @@ i18n
                 fourThre:
                   "Маркетингових агентств, які шукають надійного партнера для інтеграції CRM.",
               },
+              design: {
+                title: "Дизайн сайту на замовлення за найкращою ціною",
+                listOfSerc: "Список послуг",
+                firstTitle: "Ласкаво просимо в світ дизайну веб-сайтів!",
+                firstDesc:
+                  "Це добре відомий факт: перше враження має велике значення. У світі онлайн-бізнесу дизайн веб-сайту служить вашим віртуальним входом. На нашій сторінці ви дізнаєтеся, чому створення дизайну веб-сайту є першим кроком до успіху вашого онлайн-проекту.",
+                secondTitle: "Що таке дизайн веб-сайту і чому він важливий?",
+                secondDesc:
+                  "Дизайн веб-сайту включає створення естетично привабливого та функціонального інтерфейсу для забезпечення позитивного користувацького досвіду. Незалежно від того, чи ви розробляєте особистий сайт, корпоративний портал чи онлайн-магазин, дизайн грає важливу роль у взаємодії з вашою аудиторією.",
+                threTitle: "Наша послуга розробки дизайну веб-сайту",
+                threDesc:
+                  "Наша команда професіоналів має багаторічний досвід у розробці дизайну веб-сайтів різної складності. Ми пропонуємо:",
+                threFirst:
+                  "Індивідуальні рішення: Ваш дизайн веб-сайту буде створений для задоволення унікальних потреб вашого проекту, забезпечуючи безперешкодний інтерфейс.",
+                threSecond:
+                  "Оптимізацію дизайну: Ми знаємо, як зробити ваш веб-сайт привабливим та ефективним для ваших відвідувачів, підвищуючи залученість.",
+                threThre:
+                  "Аналітику та постійне вдосконалення: Ми оцінюємо результати і постійно оптимізуємо дизайн вашого веб-сайту для досягнення найкращих результатів.",
+                fourTitle: "Для кого ця послуга?",
+                fourDesc:
+                  "Наша команда професіоналів має багаторічний досвід у розробці дизайну веб-сайтів різної складності. Ми пропонуємо:",
+                fourFirst:
+                  "Підприємців та стартапів, які прагнуть створити ефективний віртуальний інструмент для свого бізнесу.",
+                fourSecond:
+                  "Власників бізнесу, які бажають покращити онлайн-присутність та вразити свою аудиторію.",
+                fourThre:
+                  "Маркетингових агентств, які шукають надійного партнера для розробки інноваційних веб-проектів.",
+              },
               aboutUs: {
-                title: "Про нас",
+                title: "Історія веб-студії WebUi-Studio",
                 firstText:
                   "Ми - творці інноваційних і вражаючих веб-рішень, завдяки яким ваш бізнес розвивається та стає більш доступним у світі онлайн. Наша команда згуртованих професіоналів має багаторічний досвід у розробці веб-сайтів та додатків, що надає нам впевненість у здатності досягати максимальних результатів для вас.",
                 secondTitle: "Наша мета",
@@ -609,42 +715,45 @@ i18n
                   "Наша компанія пропонує послуги з розробки сайтів для різних сфер, включаючи лендинги, корпоративні сайти та інтернет-магазини. Ми створимо унікальний веб-сайт для вашого бізнесу.",
               },
               landing: {
-                title:
-                  "Розробка Landing Page | Залучайте цільову аудиторію до вашого бізнесу",
+                title: "Замовити лендінг у WebUi-Studio",
                 description:
-                  "Створіть вражаючий Landing Page з нами. Ми робимо ваші продукти та послуги незабутніми для клієнтів.",
+                  "Розробка та створення лендінгу на замовлення. Краща ціна на односторінковий сайт. Не гайте час. Телефонуйте прямо зараз: +38093-724-61-93 та почніть ефективно продавати вже сьогодні.",
               },
               bussines: {
                 title:
-                  "Розробка Бізнес-сайтів | Ефективна веб-присутність для вашого бренду",
+                  "Розробка та створення корпоративних сайтів | WebUi-Studio",
                 description:
-                  "Наша команда розробників створює високоефективні бізнес-сайти. Зацікавлені у збільшенні продажів та підвищенні конверсії? Довірте нам розробку вашого ідеального бізнес-сайту та отримайте значущу онлайн-присутність.",
+                  "Розробка та створення корпоративних сайтів під ключ. Дизайн, наповнення та просування. Замовте бізнес-сайт по найкращій ціні та насолоджуйтесь всіма перевагами корпоративного веб-ресурсу.",
               },
               store: {
-                title: "Розробка Інтернет-магазину: Ваш Шлях до Онлайн-Успіху",
+                title: "Розробка інтернет-магазину під ключ | WebUi-Studio",
                 description:
-                  "WebUi Studio розробляє інтернет-магазини, що забезпечують вам миттєвий доступ до світу онлайн-торгівлі. Перетворіть свою ідею в успішний бізнес вже сьогодні!",
+                  "Створення інтернет-магазинів під ключ. Замовте розробку ефективного онлайн магазину з продажу одягу, білизни або інших товарів та отримуйте прибуток, не виходячи з дому. Телефонуйте прямо зараз: +38093-724-61-93 та почніть продавати вже сьогодні.",
               },
               web: {
-                title: "Розробка Веб-Додатків | Надійні та Інноваційні Рішення",
+                title: "Розробка мобільних додатків | WebUi-Studio",
                 description:
-                  "Наша команда експертів готова розробити веб-додатки будь-якої складності. Висока якість, швидкість та інновації для вашого бізнесу.",
+                  "Розробка та створення мобільних додатків під ключ для Android та iOS. Телефонуйте +38093-724-61-93 та дізнайтесь вартість розробки мобільного додатку під ваші потреби у нашого менеджера.",
               },
               crm: {
-                title: "Інтеграція CRM: Оптимізація Вашого Бізнесу",
+                title: "Інтеграція CRM систем | WebUi-Studio",
                 description:
-                  "Наша команда експертів пропонує послуги інтеграції CRM систем для підприємств будь-якого розміру. Підвищте ефективність управління клієнтами та оптимізуйте бізнес-процеси з нами.",
+                  "Інтеграція (впровадження, підключення) CRM систем для інтернет-магазину, логістики, малого та середнього бізнесу, віртуального офісу. Працюємо з KeyCrm, Perfectum, BPMonline, Sendpulse та іншими видами українських та зарубіжних CRM систем.",
+              },
+              design: {
+                title: "Розробка дизайну сайту | WebUi-Studio",
+                description:
+                  "Розробка та створення веб-дизайну сайтів по індивідуальним замовленням. Телефонуйте прямо зараз: +38093-724-61-93 та замовне унікальний дизайн для свого онлайн ресурсу.",
               },
               aboutUs: {
-                title:
-                  "WebUi Studio - Ваші Партнери в Сфері Розробки Сайтів і Додатків",
+                title: "Веб-студія WebUi-Studio",
                 description:
-                  "Наша команда - це ваш надійний партнер у створенні вражаючих веб-рішень та додатків. Дізнайтеся більше про нас та те, як ми допомагаємо вашому бізнесу рости в онлайн-світі.",
+                  "Найкраща студія з веб-дизайну та створення сайтів",
               },
               mainPage: {
-                title: "Студія розробки веб-сайтів | Творимо Інтернет-простір",
+                title: "Створення сайтів під ключ | WebUi-Studio",
                 description:
-                  "Наша студія розробки веб-сайтів пропонує індивідуальний підхід та кращі рішення для вашого інтернет-проекту. Замовте сайт від професіоналів!",
+                  "Створення сайтів під ключ на платформі WordPress, Wix та інших. Розробка веб-сайту з нуля під будь-які цілі — візитка, лендінг, інтернет-магазин, корпоративний ресурс. Щоб замовити сайт по найкращій ціні, телефонуйте прямо зараз: +38093-724-61-93",
               },
             },
           },

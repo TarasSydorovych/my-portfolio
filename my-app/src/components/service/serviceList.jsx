@@ -5,6 +5,7 @@ import {
   AiOutlineDeploymentUnit,
   AiOutlineAppstoreAdd,
 } from "react-icons/ai";
+import { BsBox } from "react-icons/bs";
 import { BsFillCartPlusFill } from "react-icons/bs";
 import { SiCivicrm } from "react-icons/si";
 import { Link } from "react-router-dom";
@@ -28,7 +29,11 @@ export default function ServiceList({ t }) {
                 {t("description.part1.services.firstOfferDesc")}
               </p>
             </div>
-            <Link className={css.link} to="/landing">
+            <Link
+              className={css.link}
+              to="/landing"
+              aria-label={t("description.part1.services.firstOfferName")}
+            >
               <div className={css.readMore}>
                 {t("description.part1.services.readMor")}
                 <AiOutlineArrowRight className={css.aiOutlineArrowRight} />
@@ -45,7 +50,11 @@ export default function ServiceList({ t }) {
                 {t("description.part1.services.secondOfferDesc")}
               </p>
             </div>
-            <Link className={css.link} to="/business">
+            <Link
+              className={css.link}
+              to="/business"
+              aria-label={t("description.part1.services.secondOfferName")}
+            >
               <div className={css.readMore}>
                 {t("description.part1.services.readMor")}
                 <AiOutlineArrowRight className={css.aiOutlineArrowRight} />
@@ -62,7 +71,11 @@ export default function ServiceList({ t }) {
                 {t("description.part1.services.threOfferDesc")}
               </p>
             </div>
-            <Link className={css.link} to="/store">
+            <Link
+              className={css.link}
+              to="/store"
+              aria-label={t("description.part1.services.threOfferName")}
+            >
               <div className={css.readMore}>
                 {t("description.part1.services.readMor")}
                 <AiOutlineArrowRight className={css.aiOutlineArrowRight} />
@@ -79,7 +92,32 @@ export default function ServiceList({ t }) {
                 {t("description.part1.services.fourOfferDesc")}
               </p>
             </div>
-            <Link className={css.link} to="/app">
+            <Link
+              className={css.link}
+              to="/app"
+              aria-label={t("description.part1.services.fourOfferName")}
+            >
+              <div className={css.readMore}>
+                {t("description.part1.services.readMor")}
+                <AiOutlineArrowRight className={css.aiOutlineArrowRight} />
+              </div>
+            </Link>
+          </div>
+          <div className={css.serviceBlockWrap}>
+            <BsBox className={css.aiFillTablet} />
+            <div className={css.desWrap}>
+              <h3 className={css.titleOfServBlock}>
+                {t("description.part1.services.sixOfferName")}
+              </h3>
+              <p className={css.descOfServBlock}>
+                {t("description.part1.services.sixOfferDesc")}
+              </p>
+            </div>
+            <Link
+              className={css.link}
+              to="/design"
+              aria-label={t("description.part1.services.sixOfferName")}
+            >
               <div className={css.readMore}>
                 {t("description.part1.services.readMor")}
                 <AiOutlineArrowRight className={css.aiOutlineArrowRight} />
@@ -96,7 +134,11 @@ export default function ServiceList({ t }) {
                 {t("description.part1.services.fiveOfferDesc")}
               </p>
             </div>
-            <Link className={css.link} to="/crm">
+            <Link
+              className={css.link}
+              to="/crm"
+              aria-label={t("description.part1.services.fiveOfferName")}
+            >
               <div className={css.readMore}>
                 {t("description.part1.services.readMor")}
                 <AiOutlineArrowRight className={css.aiOutlineArrowRight} />

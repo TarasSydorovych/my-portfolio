@@ -1,64 +1,60 @@
-import Footer from "../footer/footer";
-import HeaderUkr from "../header/headerUkr";
-import Partisipals from "../partisipals";
+import { Link } from "react-router-dom";
 
-
-
-export default function ServiseUkr() {
-
-
-    return(
-        <>
-        <Partisipals/>
-        <div className='containerHeader'>
-        <HeaderUkr/>
-
-        <section style={{height: '110vh'}} id='productList' >
-        <h2>Наші Послуги</h2>
-        <div className='productList'>
+export default function ServiseUkr({ t }) {
+  return (
+    <section id="productList">
+      <h2>{t("description.part1.mainPage.mainOurServ")}</h2>
+      <div className="productList">
         <div>
-          <h1>Landing page</h1>
-          <h2>01</h2>
-          <h3>Landing</h3>
-          <p>Landing page з прогресивним дизайном і хорошою функціональністю.</p>
+          <Link to="/landing">
+            <h1>{t("description.part1.mainPage.landTitle")}</h1>
+            <h2>01</h2>
+            <h3>Landing</h3>
+            <p>{t("description.part1.mainPage.lendDesc")}</p>
+          </Link>
         </div>
+
         <div>
-        <h1>Бізнес-сайт</h1>
-          <h2>02</h2>
-          <h3>Business</h3>
-          <p>Сайт для вашого бізнесу з максимальною реалізацією ваших потреб.</p>
+          <Link to="/business">
+            <h1>{t("description.part1.mainPage.businesTitile")}</h1>
+            <h2>02</h2>
+            <h3>Business</h3>
+            <p>{t("description.part1.mainPage.businesDesc")}</p>
+          </Link>
         </div>
         <div>
-        <h1>Інтернет-магазин</h1>
-          <h2>03</h2>
-          <h3>Online</h3>
-          <p>Ми створимо ідеальну платформу для ваших онлайн-продажів.</p>
+          <Link to="/store">
+            <h1>{t("description.part1.mainPage.onlineTitile")}</h1>
+            <h2>03</h2>
+            <h3>Online</h3>
+            <p>{t("description.part1.mainPage.onlineDesc")}</p>
+          </Link>
         </div>
         <div>
-        <h1>Блог</h1>
-          <h2>04</h2>
-          <h3>Blog</h3>
-          <p>Хочете поділитися своїми думками? Не біда, ми створимо блог!</p>
+          <Link to="/crm">
+            <h1>{t("description.part1.mainPage.crmInterTitile")}</h1>
+            <h2>04</h2>
+            <h3>CRM</h3>
+            <p>{t("description.part1.mainPage.crmInterDesc")}</p>
+          </Link>
         </div>
         <div>
-          <h1>Прогресивний дизайн</h1>
-          <h2>05</h2>
-          <h3>Design</h3>
-          <p>Наша команда дизайнерів розробить унікальний дизайн для вашого бренду.</p>
-          </div>
+          <Link to="/design">
+            <h1>{t("description.part1.mainPage.designTitile")}</h1>
+            <h2>05</h2>
+            <h3>Design</h3>
+            <p>{t("description.part1.mainPage.designDesc")}</p>
+          </Link>
+        </div>
         <div>
-        <h1>Пошукова оптимізація</h1>
-          <h2>06</h2>
-          <h3>Optimization</h3>
-          <p>Ваш сайт буде максимально оптимізований для пошукових систем.</p>
+          <Link to="/app">
+            <h1>{t("description.part1.mainPage.optimizaTitile")}</h1>
+            <h2>06</h2>
+            <h3>Optimization</h3>
+            <p>{t("description.part1.mainPage.optimizaDesc")}</p>
+          </Link>
         </div>
-        </div>
-      
-       </section>
-       <Footer/>
-        </div>
-        
-        
-        </>
-    )
+      </div>
+    </section>
+  );
 }

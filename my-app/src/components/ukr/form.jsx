@@ -1,8 +1,8 @@
 import { useRef, useState, useEffect } from "react";
 import sendEmail from "../../function/sendMessage";
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 export default function Form() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const form = useRef();
   const [phone, setPhone] = useState("");
   const [name, setName] = useState("");

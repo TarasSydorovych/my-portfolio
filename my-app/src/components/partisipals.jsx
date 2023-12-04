@@ -9,7 +9,7 @@ const Partisipals = () => {
     preset: "links",
     particles: {
       number: {
-        value: window.innerWidth > 768 ? 110 : 25, // Змінюємо кількість частинок в залежності від ширини вікна
+        value: window.innerWidth > 768 ? 30 : 15, // Змінюємо кількість частинок в залежності від ширини вікна
       },
     },
   };

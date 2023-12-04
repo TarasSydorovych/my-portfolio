@@ -3,13 +3,13 @@ import Footer from "../footer/footer";
 import HeaderUkr from "../header/headerUkr";
 import Partisipals from "../partisipals";
 import SectionTitle from "./sectionTitle";
-import css from "./service.module.css";
-import { useTranslation, Trans } from "react-i18next";
+
+import { useTranslation } from "react-i18next";
 import ServiceList from "./serviceList";
 import Question from "./question";
 import GetTotch from "./getTotch";
 export default function Servise() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   keyWord(
     `${t("description.seo.services.title")}`,
     `${t("description.seo.services.description")}`

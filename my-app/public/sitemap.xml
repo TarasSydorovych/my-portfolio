@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <url>
+    <loc>https://webui-studio.com/</loc>
+  </url>
+
+  <!-- Сторінки для різних мов -->
+  <url>
+    <loc>https://webui-studio.com/en</loc>
+  </url>
+  <url>
+    <loc>https://webui-studio.com/ua</loc>
+  </url>
+
+  <!-- Сторінки про послуги та інше -->
+  <url>
+    <loc>https://webui-studio.com/service</loc>
+  </url>
+  <url>
+    <loc>https://webui-studio.com/landing</loc>
+  </url>
+  <url>
+    <loc>https://webui-studio.com/business</loc>
+  </url>
+  <url>
+    <loc>https://webui-studio.com/store</loc>
+  </url>
+  <url>
+    <loc>https://webui-studio.com/app</loc>
+  </url>
+  <url>
+    <loc>https://webui-studio.com/crm</loc>
+  </url>
+  <url>
+    <loc>https://webui-studio.com/contact</loc>
+  </url>
+  <url>
+    <loc>https://webui-studio.com/about</loc>
+  </url>
+</urlset>
+

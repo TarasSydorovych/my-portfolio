@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap");
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -6,12 +5,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 .headerStyle {
   position: relative;
   display: flex;
@@ -25,17 +26,14 @@ body {
   flex-direction: column;
 }
 .containerHeader {
-  position: absolute;
+  position: relative;
   z-index: 1;
   width: 100%;
-}
-nav {
+  height: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 10.610079575596817vh;
+  flex-direction: column;
 }
+
 nav ul {
   display: flex;
   list-style: none;
@@ -122,24 +120,34 @@ nav .lang h4 a {
   padding-right: 10px;
 }
 #titleFirst {
+  position: relative;
+  z-index: 1;
   display: flex;
   padding: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 66.3129973474801vh;
-  padding-bottom: 23.076923076923077vh;
+  height: 800px;
   width: 100%;
 }
+.wrapWithEr {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
 #titleFirst .titleFirst {
-  margin-top: 25.19893899204244vh;
   display: flex;
   justify-self: end;
-  height: 50%;
+  height: 100px;
 }
-.titleFirst h1 {
+.h1Wrl {
   color: white;
   font-size: 40px;
+  margin-bottom: 200px;
 }
 #titleFirst button {
   position: relative;
@@ -148,35 +156,22 @@ nav .lang h4 a {
   background: none;
   border: 0;
   color: white;
-  font-size: 25px;
-  font-family: "Jost", sans-serif;
+  font-size: 23px;
+  font-weight: bold;
   cursor: pointer;
+  background: #00aef7;
 }
 #titleFirst button a {
   color: white;
 }
-#titleFirst button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 35%;
-  height: 100%;
-  background: #00aef7;
-  z-index: -1;
-  color: white;
-  font-size: 25px;
-  font-family: "Jost", sans-serif;
-}
-#titleFirst button:hover::before {
-  width: 100%;
-  transition: all 0.5s ease-in-out;
-}
+
 #productList {
   padding: 0;
-  height: 100%;
-  height: 110vh;
+  height: 1000px;
   width: 100%;
+  position: relative;
+  z-index: 1;
+  margin-top: 100px;
 }
 #productList h2 {
   display: flex;
@@ -203,6 +198,7 @@ nav .lang h4 a {
   margin-top: 2%;
   transition: all 300ms ease-in-out;
 }
+
 #productList .productList div:hover {
   height: 410px;
   background: white;
@@ -258,6 +254,9 @@ nav .lang h4 a {
 #about {
   width: 100%;
   padding-top: 80px;
+  height: auto;
+  position: relative;
+  z-index: 1;
 }
 #about h3 {
   display: flex;
@@ -361,6 +360,9 @@ nav .outLineMenu {
 /*sddddddddddddddddddddddddddddd*/
 #mailSend {
   width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
 }
 .containerInfo {
   width: 100%;
@@ -661,6 +663,18 @@ footer h6 {
   color: black;
 }
 @media only screen and (max-width: 479px) and (min-width: 300px) {
+  #titleFirst {
+    height: 400px;
+  }
+  .h1Wrl {
+    font-size: 15px;
+    width: 80%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  #productList h2 {
+    font-size: 15px;
+  }
   nav .iconWrap {
     width: 0;
     height: 0;
@@ -735,7 +749,7 @@ footer h6 {
   }
   #productList {
     padding: 0;
-    height: 280vh;
+    height: auto;
     width: 100%;
   }
   #productList .productList div {
@@ -812,6 +826,18 @@ footer h6 {
   }
 }
 @media only screen and (max-width: 700px) and (min-width: 479px) {
+  #titleFirst {
+    height: 400px;
+  }
+  .h1Wrl {
+    font-size: 20px;
+    width: 80%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  #productList h2 {
+    font-size: 20px;
+  }
   .menu {
     width: 100%;
   }
@@ -889,7 +915,7 @@ footer h6 {
   }
   #productList {
     padding: 0;
-    height: 280vh;
+    height: auto;
     width: 100%;
   }
   #productList .productList div {
@@ -961,6 +987,12 @@ footer h6 {
   }
 }
 @media only screen and (max-width: 1200px) and (min-width: 960px) {
+  .h1Wrl {
+    font-size: 40px;
+    width: 80%;
+    margin-bottom: 60px;
+    text-align: center;
+  }
   #mailSend {
     width: 100%;
     margin-bottom: 60px;
@@ -979,7 +1011,7 @@ footer h6 {
   }
   #productList {
     padding: 0;
-    height: 160vh;
+    height: auto;
     width: 100%;
   }
   #productList .productList div {
@@ -1041,6 +1073,18 @@ footer h6 {
   }
 }
 @media only screen and (max-width: 960px) and (min-width: 700px) {
+  #titleFirst {
+    height: 700px;
+  }
+  .h1Wrl {
+    font-size: 30px;
+    width: 80%;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  #productList h2 {
+    font-size: 30px;
+  }
   .contactDiv {
     display: flex;
     width: 100%;
@@ -1082,7 +1126,7 @@ footer h6 {
   }
   #productList {
     padding: 0;
-    height: 160vh;
+    height: auto;
     width: 100%;
   }
   #productList .productList div {

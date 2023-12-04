@@ -150,7 +150,7 @@
   z-index: 2;
 }
 .readMore {
-  color: var(--standart-color);
+  color: white;
   cursor: pointer;
   font-family: var(--custom-font);
   font-size: 20px;

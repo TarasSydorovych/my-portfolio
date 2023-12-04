@@ -35,7 +35,7 @@
 }
 .imgAboutFirst {
   width: 700px;
-  height: auto;
+  height: 590px;
   border-radius: 10px;
 }
 .firstTextWrap {
@@ -95,7 +95,7 @@
 }
 .earth {
   width: 800px;
-  height: auto;
+  height: 500px;
 }
 .misionDesctWrap {
   display: flex;
@@ -124,6 +124,7 @@
   }
   .imgAboutFirst {
     width: 300px;
+    height: 253px;
   }
   .firstTextWrap {
     width: calc(100% - 20px);
@@ -142,6 +143,7 @@
   }
   .earth {
     width: 300px;
+    height: 187.5px;
     margin-top: 20px;
   }
   .goalP {
@@ -157,6 +159,7 @@
   }
   .imgAboutFirst {
     width: 470px;
+    height: 396px;
   }
   .firstTextWrap {
     width: calc(100% - 20px);
@@ -175,6 +178,7 @@
   }
   .earth {
     width: 470px;
+    height: 293.75px;
     margin-top: 20px;
   }
   .goalP {
@@ -191,6 +195,7 @@
   }
   .imgAboutFirst {
     width: 470px;
+    height: 396px;
   }
   .firstTextWrap {
     align-items: center;
@@ -210,6 +215,7 @@
   }
   .earth {
     width: 470px;
+    height: 293.75px;
     margin-top: 20px;
   }
   .goalP {
@@ -222,8 +228,10 @@
 @media only screen and (max-width: 1200px) and (min-width: 960px) {
   .imgAboutFirst {
     width: 470px;
+    height: 396px;
   }
   .earth {
     width: 470px;
+    height: 293.75px;
   }
 }

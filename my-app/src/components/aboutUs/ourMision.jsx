@@ -13,7 +13,7 @@ export default function OurMision({ t }) {
             {t("description.part1.aboutUs.misionDesc")}
           </p>
         </div>
-        <img src={earth} className={css.earth} />
+        <img src={earth} className={css.earth} alt="WebUi" />
       </div>
     </section>
   );

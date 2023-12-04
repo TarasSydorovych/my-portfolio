@@ -1,0 +1,26 @@
+.wrapSiteMap {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: calc(100vh - 180px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.wrapSiteMapSmal {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.h1Mao {
+  font-size: 30px;
+  color: white;
+}
+.linkMap {
+  font-size: 20px;
+  color: white;
+  margin-top: 10px;
+  text-decoration: none;
+}
