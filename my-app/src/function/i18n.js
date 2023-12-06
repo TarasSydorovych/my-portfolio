@@ -8,8 +8,13 @@ i18n
   .init({
     debug: true,
     fallbackLng: "ua",
+    whitelist: ["ua", "en"],
     interpolation: {
       escapeValue: false,
+    },
+    detection: {
+      order: ["path", "navigator"],
+      lookupFromPathIndex: 0, // Індекс мови в шляху (0 - перший шляховий сегмент)
     },
     resources: {
       en: {

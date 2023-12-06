@@ -10,18 +10,6 @@ export default function Ukr() {
   const location = useLocation();
   const { t, i18n } = useTranslation();
 
-  useEffect(() => {
-    // Перевіряємо, чи містить поточний шлях "/en" або "/uk" і встановлюємо відповідну мову.
-    if (location.pathname.includes("/en")) {
-      i18n.changeLanguage("en");
-    } else if (location.pathname.includes("/ua")) {
-      i18n.changeLanguage("ua");
-    } else {
-      // Якщо шлях не містить "/en" або "/uk", залишаємо мову без змін.
-      // Ви можете встановити вашу мову за замовчуванням тут, наприклад, "en" або "uk".
-      // Наприклад: i18n.changeLanguage('en');
-    }
-  }, [location.pathname]);
   keyWord(
     `${t("description.seo.mainPage.title")}`,
     `${t("description.seo.mainPage.description")}`

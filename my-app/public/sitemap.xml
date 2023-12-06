@@ -4,39 +4,76 @@
  <url>
     <loc>https://webui-studio.com/</loc>
   </url>
-
+ <url>
+    <loc>https://webui-studio.com/uk-UA</loc>
+  </url>
   <!-- Сторінки для різних мов -->
-  <url>
-    <loc>https://webui-studio.com/en</loc>
-  </url>
-  <url>
-    <loc>https://webui-studio.com/ua</loc>
-  </url>
+
 
   <!-- Сторінки про послуги та інше -->
   <url>
-    <loc>https://webui-studio.com/service</loc>
+    <loc>https://webui-studio.com/uk-UA/service</loc>
   </url>
   <url>
-    <loc>https://webui-studio.com/landing</loc>
+    <loc>https://webui-studio.com/uk-UA/landing</loc>
   </url>
   <url>
-    <loc>https://webui-studio.com/business</loc>
+    <loc>https://webui-studio.com/uk-UA/business</loc>
   </url>
   <url>
-    <loc>https://webui-studio.com/store</loc>
+    <loc>https://webui-studio.com/uk-UA/store</loc>
   </url>
   <url>
-    <loc>https://webui-studio.com/app</loc>
+    <loc>https://webui-studio.com/uk-UA/app</loc>
   </url>
   <url>
-    <loc>https://webui-studio.com/crm</loc>
+    <loc>https://webui-studio.com/uk-UA/design</loc>
+  </url>
+   <url>
+    <loc>https://webui-studio.com/uk-UA/crm</loc>
   </url>
   <url>
-    <loc>https://webui-studio.com/contact</loc>
+    <loc>https://webui-studio.com/uk-UA/contact</loc>
   </url>
   <url>
-    <loc>https://webui-studio.com/about</loc>
+    <loc>https://webui-studio.com/uk-UA/about</loc>
+  </url>
+   <url>
+    <loc>https://webui-studio.com/en</loc>
+  </url>
+  <!-- Сторінки для різних мов -->
+
+
+  <!-- Сторінки про послуги та інше -->
+  <url>
+    <loc>https://webui-studio.com/en/service</loc>
+  </url>
+  <url>
+    <loc>https://webui-studio.com/en/landing</loc>
+  </url>
+  <url>
+    <loc>https://webui-studio.com/en/business</loc>
+  </url>
+  <url>
+    <loc>https://webui-studio.com/en/store</loc>
+  </url>
+  <url>
+    <loc>https://webui-studio.com/en/app</loc>
+  </url>
+  <url>
+    <loc>https://webui-studio.com/en/design</loc>
+  </url>
+   <url>
+    <loc>https://webui-studio.com/en/crm</loc>
+  </url>
+  <url>
+    <loc>https://webui-studio.com/en/contact</loc>
+  </url>
+  <url>
+    <loc>https://webui-studio.com/en/about</loc>
+  </url>
+   <url>
+    <loc>https://webui-studio.com/sitemap</loc>
   </url>
 </urlset>
 

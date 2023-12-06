@@ -9,8 +9,10 @@ import { BsBox } from "react-icons/bs";
 import { BsFillCartPlusFill } from "react-icons/bs";
 import { SiCivicrm } from "react-icons/si";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function ServiceList({ t }) {
+  const { i18n } = useTranslation();
   return (
     <section className={css.serviceListWrap}>
       <div className={css.serviceListWrapSmall}>
@@ -31,7 +33,7 @@ export default function ServiceList({ t }) {
             </div>
             <Link
               className={css.link}
-              to="/landing"
+              to={`/${i18n.language}/landing`}
               aria-label={t("description.part1.services.firstOfferName")}
             >
               <div className={css.readMore}>
@@ -52,7 +54,7 @@ export default function ServiceList({ t }) {
             </div>
             <Link
               className={css.link}
-              to="/business"
+              to={`/${i18n.language}/business`}
               aria-label={t("description.part1.services.secondOfferName")}
             >
               <div className={css.readMore}>
@@ -73,7 +75,7 @@ export default function ServiceList({ t }) {
             </div>
             <Link
               className={css.link}
-              to="/store"
+              to={`/${i18n.language}/store`}
               aria-label={t("description.part1.services.threOfferName")}
             >
               <div className={css.readMore}>
@@ -94,7 +96,7 @@ export default function ServiceList({ t }) {
             </div>
             <Link
               className={css.link}
-              to="/app"
+              to={`/${i18n.language}/app`}
               aria-label={t("description.part1.services.fourOfferName")}
             >
               <div className={css.readMore}>
@@ -115,7 +117,7 @@ export default function ServiceList({ t }) {
             </div>
             <Link
               className={css.link}
-              to="/design"
+              to={`/${i18n.language}/design`}
               aria-label={t("description.part1.services.sixOfferName")}
             >
               <div className={css.readMore}>
@@ -136,7 +138,7 @@ export default function ServiceList({ t }) {
             </div>
             <Link
               className={css.link}
-              to="/crm"
+              to={`/${i18n.language}/crm`}
               aria-label={t("description.part1.services.fiveOfferName")}
             >
               <div className={css.readMore}>

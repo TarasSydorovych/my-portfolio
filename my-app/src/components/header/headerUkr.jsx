@@ -2,13 +2,15 @@ import { BsSun } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import css from "../crm/aboutLanding.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 export default function HeaderUkr() {
   const { t, i18n } = useTranslation();
   const [windowDimensions, setWindowDimensions] = useState(true);
   const [headerSticky, setHeaderSticky] = useState(false);
   const [menu, setMenu] = useState(false);
+  const navigate = useNavigate();
+
   const handleScroll = () => {
     if (window.scrollY >= 50) {
       setHeaderSticky(true);
@@ -35,10 +37,12 @@ export default function HeaderUkr() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   const cahangeUkr = () => {
-    i18n.changeLanguage("ua");
+    i18n.changeLanguage("uk-UA");
+    navigate(`/uk-UA`);
   };
   const cahangeEn = () => {
     i18n.changeLanguage("en");
+    navigate(`/en`);
   };
   return (
     <header>
@@ -61,18 +65,18 @@ export default function HeaderUkr() {
                 <Link to="/">{t("description.part1.mainPage.headerMain")}</Link>
               </li>
               <li className="liMobile">
-                <Link to="/about">
+                <Link to={`/${i18n.language}/about`}>
                   {t("description.part1.mainPage.headerAbout")}
                 </Link>
               </li>
               <li className="liMobile">
-                <Link to="/service">
+                <Link to={`/${i18n.language}/service`}>
                   {t("description.part1.mainPage.headerServ")}
                 </Link>
               </li>
 
               <li className="liMobile">
-                <Link to="/contact">
+                <Link to={`/${i18n.language}/contact`}>
                   {" "}
                   {t("description.part1.mainPage.headerContact")}
                 </Link>
@@ -89,18 +93,18 @@ export default function HeaderUkr() {
               <Link to="/">{t("description.part1.mainPage.headerMain")}</Link>
             </li>
             <li>
-              <Link to="/about">
+              <Link to={`/${i18n.language}/about`}>
                 {t("description.part1.mainPage.headerAbout")}
               </Link>
             </li>
             <li>
-              <Link to="/service">
+              <Link to={`/${i18n.language}/service`}>
                 {t("description.part1.mainPage.headerServ")}
               </Link>
             </li>
 
             <li>
-              <Link to="/contact">
+              <Link to={`/${i18n.language}/contact`}>
                 {t("description.part1.mainPage.headerContact")}
               </Link>
             </li>
