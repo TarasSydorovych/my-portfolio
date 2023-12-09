@@ -33,7 +33,7 @@ export default function ServiceList({ t }) {
             </div>
             <Link
               className={css.link}
-              to={`/${i18n.language}/landing`}
+              to={`/landing`}
               aria-label={t("description.part1.services.firstOfferName")}
             >
               <div className={css.readMore}>
@@ -54,7 +54,7 @@ export default function ServiceList({ t }) {
             </div>
             <Link
               className={css.link}
-              to={`/${i18n.language}/business`}
+              to={`/business`}
               aria-label={t("description.part1.services.secondOfferName")}
             >
               <div className={css.readMore}>
@@ -75,7 +75,7 @@ export default function ServiceList({ t }) {
             </div>
             <Link
               className={css.link}
-              to={`/${i18n.language}/store`}
+              to={`/store`}
               aria-label={t("description.part1.services.threOfferName")}
             >
               <div className={css.readMore}>
@@ -96,7 +96,7 @@ export default function ServiceList({ t }) {
             </div>
             <Link
               className={css.link}
-              to={`/${i18n.language}/app`}
+              to={`/app`}
               aria-label={t("description.part1.services.fourOfferName")}
             >
               <div className={css.readMore}>
@@ -117,7 +117,7 @@ export default function ServiceList({ t }) {
             </div>
             <Link
               className={css.link}
-              to={`/${i18n.language}/design`}
+              to={`/design`}
               aria-label={t("description.part1.services.sixOfferName")}
             >
               <div className={css.readMore}>
@@ -138,7 +138,7 @@ export default function ServiceList({ t }) {
             </div>
             <Link
               className={css.link}
-              to={`/${i18n.language}/crm`}
+              to={`/crm`}
               aria-label={t("description.part1.services.fiveOfferName")}
             >
               <div className={css.readMore}>

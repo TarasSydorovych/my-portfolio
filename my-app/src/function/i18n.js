@@ -399,8 +399,7 @@ i18n
           description: {
             part1: {
               mainPage: {
-                mainTitle:
-                  "Створення сайтів для підвищення ефективності бізнесу",
+                mainTitle: "Створення сайтів для бізнесу",
                 mainButSend: "Напишіть нам",
                 conForm: "Контактна форма",
                 mainButStart: "Почати",

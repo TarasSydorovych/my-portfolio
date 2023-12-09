@@ -38,7 +38,7 @@ export default function HeaderUkr() {
   }, []);
   const cahangeUkr = () => {
     i18n.changeLanguage("uk-UA");
-    navigate(`/uk-UA`);
+    navigate(`/ua`);
   };
   const cahangeEn = () => {
     i18n.changeLanguage("en");
@@ -62,21 +62,23 @@ export default function HeaderUkr() {
             />
             <ul className="ulMobile">
               <li className="liMobile">
-                <Link to="/">{t("description.part1.mainPage.headerMain")}</Link>
+                <Link to={`/`}>
+                  {t("description.part1.mainPage.headerMain")}
+                </Link>
               </li>
               <li className="liMobile">
-                <Link to={`/${i18n.language}/about`}>
+                <Link to={`/about`}>
                   {t("description.part1.mainPage.headerAbout")}
                 </Link>
               </li>
               <li className="liMobile">
-                <Link to={`/${i18n.language}/service`}>
+                <Link to={`/service`}>
                   {t("description.part1.mainPage.headerServ")}
                 </Link>
               </li>
 
               <li className="liMobile">
-                <Link to={`/${i18n.language}/contact`}>
+                <Link to={`/contact`}>
                   {" "}
                   {t("description.part1.mainPage.headerContact")}
                 </Link>
@@ -90,21 +92,21 @@ export default function HeaderUkr() {
         {windowDimensions && (
           <ul>
             <li>
-              <Link to="/">{t("description.part1.mainPage.headerMain")}</Link>
+              <Link to={`/`}>{t("description.part1.mainPage.headerMain")}</Link>
             </li>
             <li>
-              <Link to={`/${i18n.language}/about`}>
+              <Link to={`/about`}>
                 {t("description.part1.mainPage.headerAbout")}
               </Link>
             </li>
             <li>
-              <Link to={`/${i18n.language}/service`}>
+              <Link to={`/service`}>
                 {t("description.part1.mainPage.headerServ")}
               </Link>
             </li>
 
             <li>
-              <Link to={`/${i18n.language}/contact`}>
+              <Link to={`/contact`}>
                 {t("description.part1.mainPage.headerContact")}
               </Link>
             </li>

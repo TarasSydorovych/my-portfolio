@@ -1,4 +1,12 @@
-import { Routes, Route, useNavigate, Navigate, Router } from "react-router-dom";
+import {
+  Routes,
+  Route,
+  useNavigate,
+  Navigate,
+  Router,
+  useParams,
+  Outlet,
+} from "react-router-dom";
 
 import ContactUkr from "./components/ukr/contact";
 import Chat from "./components/chat/chat";
@@ -24,7 +32,7 @@ import AboutDesign from "./components/design/aboutLanding";
 function App() {
   const location = useLocation();
   const { t, i18n } = useTranslation();
-
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
@@ -36,33 +44,51 @@ function App() {
   //     page: `${window.location.pathname + window.location.search}`,
   //   });
   // });
-
+  function LanguagePath() {
+    const { i18n } = useTranslation();
+    const { lang } = useParams();
+    const navigate = useNavigate();
+    const curPath = location.pathname;
+    useEffect(() => {
+      if (lang && i18n.resolvedLanguage !== lang) {
+        if (i18n.options.fallbackLng.includes(lang)) {
+          i18n.changeLanguage(lang);
+        } else {
+          navigate("/" + i18n.resolvedLanguage + curPath, { replace: true });
+        }
+      }
+    }, [lang]);
+    return <Outlet />;
+  }
   return (
     <div>
       <I18nextProvider i18n={i18n}>
         <Routes>
           {/* Маршрут для переадресації кореневого шляху до /ua або /en в залежності від поточної мови */}
-          <Route
-            path="/"
-            element={<Navigate to={`/${i18n.language}`} replace />}
-          />
-          <Route path="/:lang" element={<Ukr />} />
-          {/* Основні маршрути для кожної мови */}
-          <Route path={`/:lang/landing`} element={<AboutLanding />} />
-          <Route path="/:lang/service" element={<Servise />} />
-          <Route path="/:lang/business" element={<Bussines />} />
-          <Route path="/:lang/store" element={<OnlineStore />} />
-          <Route path="/:lang/app" element={<WebApp />} />
-          <Route path="/:lang/crm" element={<Crm />} />
-          <Route path="/:lang/design" element={<AboutDesign />} />
-          <Route path="/:lang/contact" element={<ContactUkr />} />
-          <Route path="/:lang/about" element={<AboutUs />} />
-          <Route path="/:lang/blog" element={<Blog />} />
-          <Route path="/:lang/blog/:id" element={<BlogPage />} />
 
-          {/* Додаткові маршрути для всіх мов */}
-          <Route path="/sitemap" element={<SiteMap />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/">
+            <Route index element={<Ukr />} />
+
+            <Route path=":lang" element={<LanguagePath />}>
+              {/* Основні маршрути для кожної мови */}
+              <Route index element={<Ukr />} />
+              <Route path={`landing`} element={<AboutLanding />} />
+              <Route path="service" element={<Servise />} />
+              <Route path="business" element={<Bussines />} />
+              <Route path="store" element={<OnlineStore />} />
+              <Route path="app" element={<WebApp />} />
+              <Route path="crm" element={<Crm />} />
+              <Route path="design" element={<AboutDesign />} />
+              <Route path="contact" element={<ContactUkr />} />
+              <Route path="about" element={<AboutUs />} />
+              <Route path="blog" element={<Blog />} />
+              <Route path="blog/:id" element={<BlogPage />} />
+
+              {/* Додаткові маршрути для всіх мов */}
+              <Route path="sitemap" element={<SiteMap />} />
+              <Route path="*" element={<NotFound />} />
+            </Route>
+          </Route>
         </Routes>
       </I18nextProvider>
 
