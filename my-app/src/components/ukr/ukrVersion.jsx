@@ -11,6 +11,9 @@ import Footer from "../footer/footer";
 import AboutUkr from "./about";
 import Title from "./title";
 import ServiseUkr from "./servise";
+import BlockFirsInfo from "./blockFirsInfo";
+import GetTotch from "../service/getTotch";
+import BlockSecondInfo from "./blockSecondInfo";
 export default function UkrVersion({ t }) {
   const [show, setShow] = useState(false);
   useEffect(() => {
@@ -34,7 +37,9 @@ export default function UkrVersion({ t }) {
       <a name="prodList"></a>
       <ServiseUkr t={t} />
       <AboutUkr t={t} />
-
+      <BlockFirsInfo t={t} />
+      <GetTotch t={t} />
+      <BlockSecondInfo t={t} />
       <section id="mailSend">
         <div className="containerInfo">
           <div className="columInfo">
@@ -43,8 +48,7 @@ export default function UkrVersion({ t }) {
               <address>
                 <p>
                   <strong>WebUi-Studio</strong>
-                  <br />
-                  {t("description.part1.mainPage.vul")}
+
                   <br />
                   {t("description.part1.mainPage.ind")}
                   <br />

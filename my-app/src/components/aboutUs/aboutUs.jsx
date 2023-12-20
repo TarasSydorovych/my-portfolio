@@ -8,6 +8,8 @@ import keyWord from "../../function/keyWord";
 import FirstBlock from "./firstBlock";
 import Goal from "./goal";
 import OurMision from "./ourMision";
+import BlockFirsInfo from "./blockFirsInfo";
+import BlockSecondInfo from "./blockSecondInfo";
 
 export default function AboutUs() {
   const { t, i18n } = useTranslation();
@@ -24,6 +26,8 @@ export default function AboutUs() {
         <FirstBlock t={t} />
         <OurMision t={t} />
         <Goal t={t} />
+        <BlockFirsInfo t={t} />
+        <BlockSecondInfo t={t} />
         <Footer />
       </div>
     </>

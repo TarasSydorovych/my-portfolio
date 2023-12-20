@@ -5,7 +5,9 @@ export default function ForWho({ t }) {
       <h3 className={css.titleOfferRes}>
         {t("description.part1.design.fourTitle")}
       </h3>
-
+      <p className={css.titleOfferP}>
+        {t("description.part1.design.fourDesc")}
+      </p>
       <div className={css.offerWrS}>
         <div className={css.offerSmallWr}>
           <p className={css.bigLabel}>01.</p>
@@ -25,7 +27,16 @@ export default function ForWho({ t }) {
             {t("description.part1.design.fourThre")}
           </p>
         </div>
+        <div className={css.offerSmallWr}>
+          <p className={css.bigLabel}>04.</p>
+          <p className={css.bigLabelText}>
+            {t("description.part1.design.fourFour")}
+          </p>
+        </div>
       </div>
+      <p className={css.titleOfferP}>
+        {t("description.part1.design.fourDescTwo")}
+      </p>
     </div>
   );
 }

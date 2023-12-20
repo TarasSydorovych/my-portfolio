@@ -13,22 +13,10 @@ export default function Central({ t }) {
           <p className={css.firstDescP}>
             {t("description.part1.bussines.firstDesc")}
           </p>
-          <h2 className={css.firstDescH}>
-            {t("description.part1.bussines.secondTitle")}
-          </h2>
-          <p className={css.firstDescP}>
-            {t("description.part1.bussines.secondDesc")}
-          </p>
         </div>
         <ListOfServ t={t} />
       </div>
       <div className={css.whatOfferWrap}>
-        <h3 className={css.titleOffer}>
-          {t("description.part1.bussines.threTitle")}
-        </h3>
-        <p className={css.titleOfferP}>
-          {t("description.part1.bussines.threDesc")}
-        </p>
         <div className={css.offerWrS}>
           <div className={css.offerSmallWr}>
             <p className={css.bigLabel}>01.</p>
@@ -48,7 +36,16 @@ export default function Central({ t }) {
               {t("description.part1.bussines.threThre")}
             </p>
           </div>
+          <div className={css.offerSmallWr}>
+            <p className={css.bigLabel}>04.</p>
+            <p className={css.bigLabelText}>
+              {t("description.part1.bussines.threFour")}
+            </p>
+          </div>
         </div>
+        <p className={css.titleOfferP}>
+          {t("description.part1.bussines.threDesc")}
+        </p>
       </div>
     </section>
   );

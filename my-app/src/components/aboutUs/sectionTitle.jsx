@@ -5,6 +5,7 @@ export default function SectionTitle({ t }) {
       <h1 className={css.serviceTitleH1}>
         {t("description.part1.aboutUs.title")}
       </h1>
+      <p className="h2Wrl">{t("description.part1.aboutUs.mainDesc")}</p>
     </section>
   );
 }

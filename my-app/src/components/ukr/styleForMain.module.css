@@ -1,0 +1,200 @@
+:root {
+  --standart-color: #00aef7;
+  --clr-dark-blue-rgb: 6, 9, 34;
+  --secondary-color: #09aff4;
+  --custom-font: "Jost", sans-serif;
+  --customtwo-font: "Work Sans", Arial, Tahoma;
+}
+.wrapSectionInfB {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  margin-top: 50px;
+}
+.wrapSectionInfBSmal {
+  width: 1200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h3ForNText {
+  color: white;
+  font-family: var(--custom-font);
+  font-size: 40px;
+}
+.pclas {
+  color: white;
+  font-family: var(--custom-font);
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.listWrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.firstDiv {
+  padding: 20px 20px 20px 20px;
+  width: calc(550px - 40px);
+  min-height: 300px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--standart-color);
+  border-radius: 10px;
+  margin-top: 25px;
+}
+.fsecondDiv {
+  padding: 20px 20px 20px 20px;
+  width: calc(550px - 40px);
+  height: auto;
+  display: flex;
+  align-items: f;
+  justify-content: center;
+  border: 1px solid var(--standart-color);
+  border-radius: 10px;
+  margin-top: 25px;
+}
+.standartP {
+  color: white;
+  font-family: var(--custom-font);
+  font-size: 20px;
+  margin: 0;
+}
+.wordOne {
+  color: var(--standart-color);
+  margin-top: 0;
+  font-family: var(--custom-font);
+  flex-shrink: 0;
+  font-size: 90px;
+  margin-right: 25px;
+  font-weight: bolder;
+}
+.iOutlineScan {
+  flex-shrink: 0;
+  font-size: 90px;
+  color: var(--standart-color);
+  margin-right: 20px;
+  align-self: flex-start;
+}
+@media only screen and (max-width: 479px) and (min-width: 300px) {
+  .wrapSectionInfBSmal {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .h3ForNText {
+    color: white;
+    font-family: var(--custom-font);
+    font-size: 20px;
+    text-align: center;
+    width: 90%;
+  }
+  .pclas {
+    color: white;
+    font-family: var(--custom-font);
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    text-align: center;
+    width: 90%;
+  }
+  .firstDiv {
+    padding: 20px 20px 20px 20px;
+    width: calc(300px - 40px);
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--standart-color);
+    border-radius: 10px;
+    margin-top: 25px;
+  }
+  .fsecondDiv {
+    padding: 20px 20px 20px 20px;
+    width: calc(300px - 40px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--standart-color);
+    border-radius: 10px;
+    margin-top: 25px;
+  }
+  .wordOne {
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 700px) and (min-width: 479px) {
+  .wrapSectionInfBSmal {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .h3ForNText {
+    color: white;
+    font-family: var(--custom-font);
+    font-size: 20px;
+    text-align: center;
+    width: 90%;
+  }
+  .pclas {
+    color: white;
+    font-family: var(--custom-font);
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    text-align: center;
+    width: 90%;
+  }
+  .firstDiv {
+    padding: 20px 20px 20px 20px;
+    width: calc(400px - 40px);
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--standart-color);
+    border-radius: 10px;
+    margin-top: 25px;
+  }
+  .fsecondDiv {
+    padding: 20px 20px 20px 20px;
+    width: calc(400px - 40px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--standart-color);
+    border-radius: 10px;
+    margin-top: 25px;
+  }
+  .wordOne {
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 960px) {
+}
+@media only screen and (max-width: 960px) and (min-width: 700px) {
+}

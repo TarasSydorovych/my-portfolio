@@ -25,7 +25,28 @@ export default function ForWho({ t }) {
             {t("description.part1.landing.fourThre")}
           </p>
         </div>
+        <div className={css.offerSmallWr}>
+          <p className={css.bigLabel}>04.</p>
+          <p className={css.bigLabelText}>
+            {t("description.part1.landing.fourFour")}
+          </p>
+        </div>
+        <div className={css.offerSmallWr}>
+          <p className={css.bigLabel}>05.</p>
+          <p className={css.bigLabelText}>
+            {t("description.part1.landing.fourFive")}
+          </p>
+        </div>
+        <div className={css.offerSmallWr}>
+          <p className={css.bigLabel}>06.</p>
+          <p className={css.bigLabelText}>
+            {t("description.part1.landing.fourSix")}
+          </p>
+        </div>
       </div>
+      <p className={css.titleOfferP}>
+        {t("description.part1.landing.fourDesc")}
+      </p>
     </div>
   );
 }

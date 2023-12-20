@@ -121,7 +121,7 @@ nav .lang h4 a {
 }
 #titleFirst {
   position: relative;
-  z-index: 1;
+
   display: flex;
   padding: 0;
   flex-direction: column;
@@ -147,7 +147,14 @@ nav .lang h4 a {
 .h1Wrl {
   color: white;
   font-size: 40px;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
+}
+.h2Wrl {
+  color: white;
+  font-size: 20px;
+  width: 800px;
+  text-align: center;
+  margin-bottom: 100px;
 }
 #titleFirst button {
   position: relative;
@@ -646,8 +653,8 @@ footer h6 {
   width: 40%;
   height: 100vh;
   background: white;
-  opacity: 0.8;
-  z-index: 3;
+  opacity: 0.9;
+  z-index: 10;
 }
 .menu .ulMobile {
   width: 100%;
@@ -668,6 +675,12 @@ footer h6 {
   }
   .h1Wrl {
     font-size: 15px;
+    width: 80%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .h2Wrl {
+    font-size: 13px;
     width: 80%;
     margin-bottom: 40px;
     text-align: center;
@@ -835,6 +848,12 @@ footer h6 {
     margin-bottom: 40px;
     text-align: center;
   }
+  .h2Wrl {
+    font-size: 15px;
+    width: 80%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
   #productList h2 {
     font-size: 20px;
   }
@@ -993,6 +1012,12 @@ footer h6 {
     margin-bottom: 60px;
     text-align: center;
   }
+  .h2Wrl {
+    font-size: 20px;
+    width: 80%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
   #mailSend {
     width: 100%;
     margin-bottom: 60px;
@@ -1080,6 +1105,12 @@ footer h6 {
     font-size: 30px;
     width: 80%;
     margin-bottom: 60px;
+    text-align: center;
+  }
+  .h2Wrl {
+    font-size: 15px;
+    width: 80%;
+    margin-bottom: 40px;
     text-align: center;
   }
   #productList h2 {
