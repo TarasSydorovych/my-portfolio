@@ -21,37 +21,37 @@ export default function ListOfServ({ t }) {
       <ul className={css.servListH2}>
         <li className={css.listLi}>
           <FaConnectdevelop className={css.aiFillTablet} />
-          <Link className={css.linkSerc} to={`/${i18n.language}/landing`}>
+          <Link className={css.linkSerc} to={`/landing`}>
             {t("description.part1.services.firstOfferName")}
           </Link>
         </li>
         <li className={css.listLi}>
           <AiOutlineDeploymentUnit className={css.aiFillTablet} />
-          <Link className={css.linkSerc} to={`/${i18n.language}/business`}>
+          <Link className={css.linkSerc} to={`/business`}>
             {t("description.part1.services.secondOfferName")}
           </Link>
         </li>
         <li className={css.listLi}>
           <BsFillCartPlusFill className={css.aiFillTablet} />
-          <Link className={css.linkSerc} to={`/${i18n.language}/store`}>
+          <Link className={css.linkSerc} to={`/store`}>
             {t("description.part1.services.threOfferName")}
           </Link>
         </li>
         <li className={css.listLi}>
           <AiOutlineAppstoreAdd className={css.aiFillTablet} />
-          <Link className={css.linkSerc} to={`/${i18n.language}/app`}>
+          <Link className={css.linkSerc} to={`/app`}>
             {t("description.part1.services.fourOfferName")}
           </Link>
         </li>
         <li className={css.listLi}>
           <BsBox className={css.aiFillTablet} />
-          <Link className={css.linkSerc} to={`/${i18n.language}/design`}>
+          <Link className={css.linkSerc} to={`/design`}>
             {t("description.part1.services.sixOfferName")}
           </Link>
         </li>
         <li className={css.listLi}>
           <SiCivicrm className={css.aiFillTablet} />
-          <Link className={css.linkSerc} to={`/${i18n.language}/crm`}>
+          <Link className={css.linkSerc} to={`/crm`}>
             {t("description.part1.services.fiveOfferName")}
           </Link>
         </li>

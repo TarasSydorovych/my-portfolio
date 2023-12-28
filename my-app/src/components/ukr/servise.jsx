@@ -8,7 +8,7 @@ export default function ServiseUkr({ t }) {
       <h2>{t("description.part1.mainPage.mainOurServ")}</h2>
       <div className="productList">
         <div>
-          <Link to={`/${i18n.language}/landing`}>
+          <Link to={`/landing`}>
             <h1>{t("description.part1.mainPage.landTitle")}</h1>
             <h2>01</h2>
             <h3>Landing</h3>
@@ -17,7 +17,7 @@ export default function ServiseUkr({ t }) {
         </div>
 
         <div>
-          <Link to={`/${i18n.language}/business`}>
+          <Link to={`/business`}>
             <h1>{t("description.part1.mainPage.businesTitile")}</h1>
             <h2>02</h2>
             <h3>Business</h3>
@@ -25,7 +25,7 @@ export default function ServiseUkr({ t }) {
           </Link>
         </div>
         <div>
-          <Link to={`/${i18n.language}/store`}>
+          <Link to={`/store`}>
             <h1>{t("description.part1.mainPage.onlineTitile")}</h1>
             <h2>03</h2>
             <h3>Online</h3>
@@ -33,7 +33,7 @@ export default function ServiseUkr({ t }) {
           </Link>
         </div>
         <div>
-          <Link to={`/${i18n.language}/crm`}>
+          <Link to={`/crm`}>
             <h1>{t("description.part1.mainPage.crmInterTitile")}</h1>
             <h2>04</h2>
             <h3>CRM</h3>
@@ -41,7 +41,7 @@ export default function ServiseUkr({ t }) {
           </Link>
         </div>
         <div>
-          <Link to={`/${i18n.language}/design`}>
+          <Link to={`/design`}>
             <h1>{t("description.part1.mainPage.designTitile")}</h1>
             <h2>05</h2>
             <h3>Design</h3>
@@ -49,7 +49,7 @@ export default function ServiseUkr({ t }) {
           </Link>
         </div>
         <div>
-          <Link to={`/${i18n.language}/app`}>
+          <Link to={`/app`}>
             <h1>{t("description.part1.mainPage.optimizaTitile")}</h1>
             <h2>06</h2>
             <h3>Optimization</h3>
